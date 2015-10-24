@@ -58,9 +58,11 @@ class ScoreCard extends React.Component {
             }
         })
         return <span className="pos-abs bottom-0 left-0 teal bg-white w-100 pvs tc" style={{position: "fixed", zIndex: 999}}> 
-        <b>Score:</b> <span className="v-sup">{numCorrect}</span> / <span className="v-sub">{numAnswered}</span>
-        <span className="w1" style={{display: "inline-block"}}></span>
-        <span> <b>Remaining:</b> {numRemaining} </span> </span>;
+            <b>Score:</b> <span className="v-sup">{numCorrect}</span> / <span className="v-sub">{numAnswered}</span>
+            <span className="w1" style={{display: "inline-block"}}></span>
+            <span> <b>Remaining:</b> {numRemaining} </span> 
+            <span> <b><a className="pos-abs-l mll mln-l right-2 teal" href="/about.html">About this game</a></b></span>
+        </span>;
     }
 }
 
@@ -193,7 +195,7 @@ class Section extends React.Component {
 
 function getInitialState(curriculum) {
     let initialState = new Map()
-    allPrograms = [].concat.apply([],curriculum.map(({text, programs}, index) => programs))
+    let allPrograms = [].concat.apply([],curriculum.map(({text, programs}, index) => programs))
     allPrograms.forEach(program => {
         initialState.set(program, undefined)
     })
@@ -227,6 +229,7 @@ class Quiz extends React.Component {
                     } />
                 })
             }
+            <div className="h3"> </div>
         </div>;
     }
 }
@@ -277,20 +280,18 @@ store.subscribe(() => {
     if (!started) {
         started = true;
         // Record time the attempt was started
-        attemptRef.set({started: Firebase.ServerValue.TIMESTAMP});
+        attemptRef.child("started").set(Firebase.ServerValue.TIMESTAMP);
     }
 
     let previousValue = currentValue;
     currentValue = store.getState();
 
     if (previousValue !== currentValue) {
-        // lol really no way to go form string map to object easily?
-        let stateObj = Object.assign({},
-                ...([...store.getState()].map(([k,v]) => {
-                    return {[k.replace(".", "_")]: v || null };  // Firebase doesn't allow undefined
-                })));
-        answersRef.set(stateObj);
-
+        for (var [key, val] of currentValue) {
+            if (val !== undefined) {
+                answersRef.child(key.replace(".", "_")).set(val);
+            }
+        }
     }
 });
 
