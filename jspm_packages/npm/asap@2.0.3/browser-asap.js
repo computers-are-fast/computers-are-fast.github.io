@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
   "use strict";
-  var rawAsap = require("./browser-raw");
+  var rawAsap = require('./browser-raw');
   var freeTasks = [];
   var pendingErrors = [];
   var requestErrorThrow = rawAsap.makeRequestCallFromTimer(throwFirstError);
@@ -39,4 +39,4 @@
       freeTasks[freeTasks.length] = this;
     }
   };
-})(require("process"));
+})(require('process'));

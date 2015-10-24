@@ -1,10 +1,10 @@
 /* */ 
 "format cjs";
 if (typeof define !== 'function') {
-  var define = require("amdefine")(module, require);
+  var define = require('amdefine')(module, require);
 }
 define(function(require, exports, module) {
-  var util = require("../../lib/source-map/util");
+  var util = require('../../lib/source-map/util');
   exports.testGeneratedCode = " ONE.foo=function(a){return baz(a);};\n" + " TWO.inc=function(a){return a+1;};";
   exports.testMap = {
     version: 3,

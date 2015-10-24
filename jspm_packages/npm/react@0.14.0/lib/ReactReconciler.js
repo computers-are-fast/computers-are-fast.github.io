@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var ReactRef = require("./ReactRef");
+var ReactRef = require('./ReactRef');
 function attachRefs() {
   ReactRef.attachRefs(this, this._currentElement);
 }

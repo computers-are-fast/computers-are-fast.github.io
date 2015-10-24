@@ -1,6 +1,6 @@
 /* */ 
-var test = require("tape");
-var through = require("../../through@2.3.8");
+var test = require('tape');
+var through = require('../index');
 test('buffering', function(assert) {
   var ts = through(function(data) {
     this.queue(data);

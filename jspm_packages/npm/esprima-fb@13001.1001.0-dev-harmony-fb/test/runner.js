@@ -366,10 +366,10 @@
   } else {
     (function() {
       'use strict';
-      var esprima = require("../esprima"),
-          vm = require("vm"),
-          fs = require("fs"),
-          diff = require("json-diff").diffString,
+      var esprima = require('../esprima'),
+          vm = require('vm'),
+          fs = require('fs'),
+          diff = require('json-diff').diffString,
           total = 0,
           failures = [],
           tick = new Date(),
@@ -415,4 +415,4 @@
       process.exit(failures.length === 0 ? 0 : 1);
     }());
   }
-})(require("process"));
+})(require('process'));

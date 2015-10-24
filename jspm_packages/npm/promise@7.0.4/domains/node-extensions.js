@@ -1,7 +1,7 @@
 /* */ 
 'use strict';
-var Promise = require("./core");
-var asap = require("asap");
+var Promise = require('./core');
+var asap = require('asap');
 module.exports = Promise;
 Promise.denodeify = function(fn, argumentCount) {
   argumentCount = argumentCount || Infinity;

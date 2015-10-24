@@ -1,12 +1,12 @@
 /* */ 
 'use strict';
-var EventConstants = require("./EventConstants");
-var EventPluginUtils = require("./EventPluginUtils");
-var EventPropagators = require("./EventPropagators");
-var SyntheticUIEvent = require("./SyntheticUIEvent");
-var TouchEventUtils = require("fbjs/lib/TouchEventUtils");
-var ViewportMetrics = require("./ViewportMetrics");
-var keyOf = require("fbjs/lib/keyOf");
+var EventConstants = require('./EventConstants');
+var EventPluginUtils = require('./EventPluginUtils');
+var EventPropagators = require('./EventPropagators');
+var SyntheticUIEvent = require('./SyntheticUIEvent');
+var TouchEventUtils = require('fbjs/lib/TouchEventUtils');
+var ViewportMetrics = require('./ViewportMetrics');
+var keyOf = require('fbjs/lib/keyOf');
 var topLevelTypes = EventConstants.topLevelTypes;
 var isStartish = EventPluginUtils.isStartish;
 var isEndish = EventPluginUtils.isEndish;

@@ -1,2 +1,2 @@
 /* */ 
-module.exports = require("./lib/_stream_duplex");
+module.exports = require('./lib/_stream_duplex');

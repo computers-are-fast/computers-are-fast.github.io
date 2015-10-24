@@ -1,11 +1,11 @@
 /* */ 
-var ctx = require("./$.ctx"),
-    isObject = require("./$.is-object"),
-    IObject = require("./$.iobject"),
-    toObject = require("./$.to-object"),
-    toLength = require("./$.to-length"),
-    isArray = require("./$.is-array"),
-    SPECIES = require("./$.wks")('species');
+var ctx = require('./$.ctx'),
+    isObject = require('./$.is-object'),
+    IObject = require('./$.iobject'),
+    toObject = require('./$.to-object'),
+    toLength = require('./$.to-length'),
+    isArray = require('./$.is-array'),
+    SPECIES = require('./$.wks')('species');
 var ASC = function(original, length) {
   var C;
   if (isArray(original) && isObject(C = original.constructor)) {

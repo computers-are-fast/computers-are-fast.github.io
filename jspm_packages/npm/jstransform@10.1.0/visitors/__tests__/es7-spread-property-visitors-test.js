@@ -1,5 +1,5 @@
 /* */ 
-require("mock-modules").autoMockOff();
+require('mock-modules').autoMockOff();
 describe('es7-spread-property-visitors', function() {
   var transformFn;
   var originalAssign = Object.assign;
@@ -8,9 +8,9 @@ describe('es7-spread-property-visitors', function() {
   var y = 789012;
   var z = 345678;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    transformFn = require("../../src/jstransform").transform;
-    visitors = require("../es7-spread-property-visitors").visitorList;
+    require('mock-modules').dumpCache();
+    transformFn = require('../../src/jstransform').transform;
+    visitors = require('../es7-spread-property-visitors').visitorList;
   });
   function transform(code) {
     return transformFn(visitors, code).code;

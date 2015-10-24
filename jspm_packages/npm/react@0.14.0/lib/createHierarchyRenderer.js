@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var React = require("./React");
+var React = require('./React');
 function createHierarchyRenderer() {
   for (var _len = arguments.length,
       renderMethods = Array(_len),

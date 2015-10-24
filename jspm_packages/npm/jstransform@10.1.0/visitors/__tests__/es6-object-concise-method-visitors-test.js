@@ -1,15 +1,15 @@
 /* */ 
-require("mock-modules").autoMockOff();
+require('mock-modules').autoMockOff();
 describe('es6-object-concise-method-visitors', function() {
   var transformFn;
   var conciseMethodVisitors;
   var restParamVisitors;
   var visitors;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    conciseMethodVisitors = require("../es6-object-concise-method-visitors").visitorList;
-    restParamVisitors = require("../es6-rest-param-visitors").visitorList;
-    transformFn = require("../../src/jstransform").transform;
+    require('mock-modules').dumpCache();
+    conciseMethodVisitors = require('../es6-object-concise-method-visitors').visitorList;
+    restParamVisitors = require('../es6-rest-param-visitors').visitorList;
+    transformFn = require('../../src/jstransform').transform;
     visitors = conciseMethodVisitors.concat(restParamVisitors);
   });
   function transform(code) {

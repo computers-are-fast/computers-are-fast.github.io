@@ -1,12 +1,12 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactDOMIDOperations = require("./ReactDOMIDOperations");
-  var LinkedValueUtils = require("./LinkedValueUtils");
-  var ReactMount = require("./ReactMount");
-  var ReactUpdates = require("./ReactUpdates");
-  var assign = require("./Object.assign");
-  var invariant = require("fbjs/lib/invariant");
+  var ReactDOMIDOperations = require('./ReactDOMIDOperations');
+  var LinkedValueUtils = require('./LinkedValueUtils');
+  var ReactMount = require('./ReactMount');
+  var ReactUpdates = require('./ReactUpdates');
+  var assign = require('./Object.assign');
+  var invariant = require('fbjs/lib/invariant');
   var instancesByReactID = {};
   function forceUpdateIfMounted() {
     if (this._rootNodeID) {
@@ -82,4 +82,4 @@
     return returnValue;
   }
   module.exports = ReactDOMInput;
-})(require("process"));
+})(require('process'));

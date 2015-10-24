@@ -1,21 +1,21 @@
 /* */ 
 'use strict';
-var $ = require("./$"),
-    $def = require("./$.def"),
-    hide = require("./$.hide"),
-    forOf = require("./$.for-of"),
-    strictNew = require("./$.strict-new");
+var $ = require('./$'),
+    $def = require('./$.def'),
+    hide = require('./$.hide'),
+    forOf = require('./$.for-of'),
+    strictNew = require('./$.strict-new');
 module.exports = function(NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
-  var Base = require("./$.global")[NAME],
+  var Base = require('./$.global')[NAME],
       C = Base,
       ADDER = IS_MAP ? 'set' : 'add',
       proto = C && C.prototype,
       O = {};
-  if (!require("./$.support-desc") || typeof C != 'function' || !(IS_WEAK || proto.forEach && !require("./$.fails")(function() {
+  if (!require('./$.support-desc') || typeof C != 'function' || !(IS_WEAK || proto.forEach && !require('./$.fails')(function() {
     new C().entries().next();
   }))) {
     C = common.getConstructor(wrapper, NAME, IS_MAP, ADDER);
-    require("./$.mix")(C.prototype, methods);
+    require('./$.mix')(C.prototype, methods);
   } else {
     C = wrapper(function(target, iterable) {
       strictNew(target, C, NAME);
@@ -36,7 +36,7 @@ module.exports = function(NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
           return this._c.size;
         }});
   }
-  require("./$.tag")(C, NAME);
+  require('./$.tag')(C, NAME);
   O[NAME] = C;
   $def($def.G + $def.W + $def.F, O);
   if (!IS_WEAK)

@@ -1,7 +1,7 @@
 /* */ 
-var from = require("from");
-var through = require("../../through@2.3.8");
-var tape = require("tape");
+var from = require('from');
+var through = require('../index');
+var tape = require('tape');
 tape('simple async example', function(t) {
   var n = 0,
       expected = [1, 2, 3, 4, 5],

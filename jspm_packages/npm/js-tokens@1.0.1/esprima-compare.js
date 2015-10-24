@@ -1,8 +1,8 @@
 /* */ 
 (function(process) {
-  var fs = require("fs");
-  var esprima = require("esprima");
-  var jsTokens = require("./index");
+  var fs = require('fs');
+  var esprima = require('esprima');
+  var jsTokens = require('./index');
   var typeMap = {
     Boolean: "name",
     Identifier: "name",
@@ -66,4 +66,4 @@
   } else {
     console.error("Comparison failed.");
   }
-})(require("process"));
+})(require('process'));

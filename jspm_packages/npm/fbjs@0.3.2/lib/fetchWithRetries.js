@@ -13,11 +13,11 @@
     }
     return target;
   }
-  var ExecutionEnvironment = require("./ExecutionEnvironment");
-  var Promise = require("./Promise");
-  var sprintf = require("./sprintf");
-  var fetch = require("./fetch");
-  var warning = require("./warning");
+  var ExecutionEnvironment = require('./ExecutionEnvironment');
+  var Promise = require('./Promise');
+  var sprintf = require('./sprintf');
+  var fetch = require('./fetch');
+  var warning = require('./warning');
   var DEFAULT_TIMEOUT = 15000;
   var DEFAULT_RETRIES = [1000, 3000];
   function fetchWithRetries(uri, initWithRetries) {
@@ -78,4 +78,4 @@
     });
   }
   module.exports = fetchWithRetries;
-})(require("process"));
+})(require('process'));

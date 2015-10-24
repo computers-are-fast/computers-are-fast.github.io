@@ -1,9 +1,9 @@
 /* */ 
 'use strict';
-var base62 = require("base62");
-var Syntax = require("esprima-fb").Syntax;
-var utils = require("../src/utils");
-var reservedWordsHelper = require("./reserved-words-helper");
+var base62 = require('base62');
+var Syntax = require('esprima-fb').Syntax;
+var utils = require('../src/utils');
+var reservedWordsHelper = require('./reserved-words-helper');
 var declareIdentInLocalScope = utils.declareIdentInLocalScope;
 var initScopeMetadata = utils.initScopeMetadata;
 var SUPER_PROTO_IDENT_PREFIX = '____SuperProtoOf';

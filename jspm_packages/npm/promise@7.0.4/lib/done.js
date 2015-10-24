@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var Promise = require("./core");
+var Promise = require('./core');
 module.exports = Promise;
 Promise.prototype.done = function(onFulfilled, onRejected) {
   var self = arguments.length ? this.then.apply(this, arguments) : this;

@@ -61,4 +61,4 @@
     };
   }
   rawAsap.makeRequestCallFromTimer = makeRequestCallFromTimer;
-})(require("process"));
+})(require('process'));

@@ -1,8 +1,8 @@
 /* */ 
 (function(process) {
-  var through = require("through"),
-      jstransform = require("jstransform"),
-      createVisitors = require("./visitors");
+  var through = require('through'),
+      jstransform = require('jstransform'),
+      createVisitors = require('./visitors');
   var processEnvPattern = /\bprocess\.env\b/;
   module.exports = function(rootEnv) {
     rootEnv = rootEnv || process.env || {};
@@ -30,4 +30,4 @@
       }
     };
   };
-})(require("process"));
+})(require('process'));

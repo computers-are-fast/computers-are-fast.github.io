@@ -4,9 +4,9 @@ describe('reserved-words', function() {
   var transformFn;
   var visitors;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    visitors = require("../reserved-words-visitors").visitorList;
-    transformFn = require("../../src/jstransform").transform;
+    require('mock-modules').dumpCache();
+    visitors = require('../reserved-words-visitors').visitorList;
+    transformFn = require('../../src/jstransform').transform;
   });
   function transform(code, opts) {
     return transformFn(visitors, code, opts).code;

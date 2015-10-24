@@ -1,12 +1,12 @@
 /* */ 
-require("mock-modules").autoMockOff();
+require('mock-modules').autoMockOff();
 describe('es7-rest-property-visitors', function() {
   var transformFn;
   var visitors;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    transformFn = require("../../src/jstransform").transform;
-    visitors = require("../es6-destructuring-visitors").visitorList;
+    require('mock-modules').dumpCache();
+    transformFn = require('../../src/jstransform').transform;
+    visitors = require('../es6-destructuring-visitors').visitorList;
   });
   function transform(code) {
     var lines = Array.prototype.join.call(arguments, '\n');

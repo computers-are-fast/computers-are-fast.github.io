@@ -1,7 +1,7 @@
 /* */ 
 'use strict';
-var Syntax = require("esprima-fb").Syntax;
-var utils = require("../src/utils");
+var Syntax = require('esprima-fb').Syntax;
+var utils = require('../src/utils');
 function visitTemplateLiteral(traverse, node, path, state) {
   var templateElements = node.quasis;
   utils.append('(', state);

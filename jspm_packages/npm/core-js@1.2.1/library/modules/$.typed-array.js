@@ -1,20 +1,20 @@
 /* */ 
 'use strict';
-var global = require("./$.global"),
-    $ = require("./$"),
-    $def = require("./$.def"),
-    $buffer = require("./$.buffer"),
-    strictNew = require("./$.strict-new"),
-    $hide = require("./$.hide"),
-    toInteger = require("./$.to-integer"),
-    toLength = require("./$.to-length"),
-    toIndex = require("./$.to-index"),
-    isObject = require("./$.is-object"),
-    toObject = require("./$.to-object"),
-    isIterable = require("./core.is-iterable"),
-    TYPED_ARRAY = require("./$.wks")('_typed');
-var arrayMethods = require("./$.array-methods"),
-    arrayIncludes = require("./$.array-includes"),
+var global = require('./$.global'),
+    $ = require('./$'),
+    $def = require('./$.def'),
+    $buffer = require('./$.buffer'),
+    strictNew = require('./$.strict-new'),
+    $hide = require('./$.hide'),
+    toInteger = require('./$.to-integer'),
+    toLength = require('./$.to-length'),
+    toIndex = require('./$.to-index'),
+    isObject = require('./$.is-object'),
+    toObject = require('./$.to-object'),
+    isIterable = require('./core.is-iterable'),
+    TYPED_ARRAY = require('./$.wks')('_typed');
+var arrayMethods = require('./$.array-methods'),
+    arrayIncludes = require('./$.array-includes'),
     $forEach = arrayMethods(0),
     $map = arrayMethods(1),
     $filter = arrayMethods(2),
@@ -24,8 +24,8 @@ var arrayMethods = require("./$.array-methods"),
     $findIndex = arrayMethods(6),
     $indexOf = arrayIncludes(false),
     $includes = arrayIncludes(true),
-    $fill = require("./$.array-fill"),
-    $copyWithin = require("./$.array-copy-within"),
+    $fill = require('./$.array-fill'),
+    $copyWithin = require('./$.array-copy-within'),
     $lastIndexOf = [].lastIndexOf,
     $reduce = [].reduce,
     $reduceRight = [].reduceRight,
@@ -224,9 +224,9 @@ module.exports = function(TYPE, BYTES, wrapper) {
     addGetter($TypedArray, 'byteOffset', '_o');
     $hide($TypedArray, 'BYTES_PER_ELEMENT', BYTES);
     $hide($TypedArray.prototype, 'BYTES_PER_ELEMENT', BYTES);
-    require("./$.mix")($TypedArray.prototype, proto);
-    require("./$.mix")($TypedArray, statics);
-  } else if (!require("./$.iter-detect")(function(iter) {
+    require('./$.mix')($TypedArray.prototype, proto);
+    require('./$.mix')($TypedArray, statics);
+  } else if (!require('./$.iter-detect')(function(iter) {
     new $TypedArray(iter);
   })) {
     $TypedArray = wrapper(function(that, data, $offset, $length) {

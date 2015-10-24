@@ -1,8 +1,8 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ExecutionEnvironment = require("./ExecutionEnvironment");
-  var invariant = require("./invariant");
+  var ExecutionEnvironment = require('./ExecutionEnvironment');
+  var invariant = require('./invariant');
   var dummyNode = ExecutionEnvironment.canUseDOM ? document.createElement('div') : null;
   var shouldWrap = {};
   var selectWrap = [1, '<select multiple="true">', '</select>'];
@@ -47,4 +47,4 @@
     return shouldWrap[nodeName] ? markupWrap[nodeName] : null;
   }
   module.exports = getMarkupWrap;
-})(require("process"));
+})(require('process'));

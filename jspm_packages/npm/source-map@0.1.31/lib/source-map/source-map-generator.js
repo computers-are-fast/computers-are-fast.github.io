@@ -1,12 +1,12 @@
 /* */ 
 "format cjs";
 if (typeof define !== 'function') {
-  var define = require("amdefine")(module, require);
+  var define = require('amdefine')(module, require);
 }
 define(function(require, exports, module) {
-  var base64VLQ = require("./base64-vlq");
-  var util = require("./util");
-  var ArraySet = require("./array-set").ArraySet;
+  var base64VLQ = require('./base64-vlq');
+  var util = require('./util');
+  var ArraySet = require('./array-set').ArraySet;
   function SourceMapGenerator(aArgs) {
     this._file = util.getArg(aArgs, 'file');
     this._sourceRoot = util.getArg(aArgs, 'sourceRoot', null);

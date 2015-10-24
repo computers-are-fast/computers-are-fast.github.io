@@ -10,4 +10,4 @@
     };
   }
   module.exports = ReactPropTypeLocationNames;
-})(require("process"));
+})(require('process'));

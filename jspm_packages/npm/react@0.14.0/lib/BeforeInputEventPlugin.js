@@ -1,12 +1,12 @@
 /* */ 
 'use strict';
-var EventConstants = require("./EventConstants");
-var EventPropagators = require("./EventPropagators");
-var ExecutionEnvironment = require("fbjs/lib/ExecutionEnvironment");
-var FallbackCompositionState = require("./FallbackCompositionState");
-var SyntheticCompositionEvent = require("./SyntheticCompositionEvent");
-var SyntheticInputEvent = require("./SyntheticInputEvent");
-var keyOf = require("fbjs/lib/keyOf");
+var EventConstants = require('./EventConstants');
+var EventPropagators = require('./EventPropagators');
+var ExecutionEnvironment = require('fbjs/lib/ExecutionEnvironment');
+var FallbackCompositionState = require('./FallbackCompositionState');
+var SyntheticCompositionEvent = require('./SyntheticCompositionEvent');
+var SyntheticInputEvent = require('./SyntheticInputEvent');
+var keyOf = require('fbjs/lib/keyOf');
 var END_KEYCODES = [9, 13, 27, 32];
 var START_KEYCODE = 229;
 var canUseCompositionEvent = ExecutionEnvironment.canUseDOM && 'CompositionEvent' in window;

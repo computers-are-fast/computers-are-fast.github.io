@@ -1,8 +1,8 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactRootIndex = require("./ReactRootIndex");
-  var invariant = require("fbjs/lib/invariant");
+  var ReactRootIndex = require('./ReactRootIndex');
+  var invariant = require('fbjs/lib/invariant');
   var SEPARATOR = '.';
   var SEPARATOR_LENGTH = SEPARATOR.length;
   var MAX_TREE_DEPTH = 10000;
@@ -116,4 +116,4 @@
     SEPARATOR: SEPARATOR
   };
   module.exports = ReactInstanceHandles;
-})(require("process"));
+})(require('process'));

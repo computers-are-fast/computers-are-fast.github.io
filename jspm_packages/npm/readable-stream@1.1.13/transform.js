@@ -1,2 +1,2 @@
 /* */ 
-module.exports = require("./lib/_stream_transform");
+module.exports = require('./lib/_stream_transform');

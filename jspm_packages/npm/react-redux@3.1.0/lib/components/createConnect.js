@@ -35,17 +35,17 @@
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _utilsCreateStoreShape = require("../utils/createStoreShape");
+  var _utilsCreateStoreShape = require('../utils/createStoreShape');
   var _utilsCreateStoreShape2 = _interopRequireDefault(_utilsCreateStoreShape);
-  var _utilsShallowEqual = require("../utils/shallowEqual");
+  var _utilsShallowEqual = require('../utils/shallowEqual');
   var _utilsShallowEqual2 = _interopRequireDefault(_utilsShallowEqual);
-  var _utilsIsPlainObject = require("../utils/isPlainObject");
+  var _utilsIsPlainObject = require('../utils/isPlainObject');
   var _utilsIsPlainObject2 = _interopRequireDefault(_utilsIsPlainObject);
-  var _utilsWrapActionCreators = require("../utils/wrapActionCreators");
+  var _utilsWrapActionCreators = require('../utils/wrapActionCreators');
   var _utilsWrapActionCreators2 = _interopRequireDefault(_utilsWrapActionCreators);
-  var _hoistNonReactStatics = require("hoist-non-react-statics");
+  var _hoistNonReactStatics = require('hoist-non-react-statics');
   var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
-  var _invariant = require("invariant");
+  var _invariant = require('invariant');
   var _invariant2 = _interopRequireDefault(_invariant);
   var defaultMapStateToProps = function defaultMapStateToProps() {
     return {};
@@ -211,4 +211,4 @@
     };
   }
   module.exports = exports['default'];
-})(require("process"));
+})(require('process'));

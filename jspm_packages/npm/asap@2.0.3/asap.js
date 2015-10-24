@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
   "use strict";
-  var rawAsap = require("./browser-raw");
+  var rawAsap = require('./browser-raw');
   var freeTasks = [];
   module.exports = asap;
   function asap(task) {
@@ -39,4 +39,4 @@
       freeTasks.push(this);
     }
   };
-})(require("process"));
+})(require('process'));

@@ -1,6 +1,6 @@
 /* */ 
-var Syntax = require("esprima-fb").Syntax;
-var utils = require("../src/utils");
+var Syntax = require('esprima-fb').Syntax;
+var utils = require('../src/utils');
 function _nodeIsFunctionWithRestParam(node) {
   return (node.type === Syntax.FunctionDeclaration || node.type === Syntax.FunctionExpression || node.type === Syntax.ArrowFunctionExpression) && node.rest;
 }

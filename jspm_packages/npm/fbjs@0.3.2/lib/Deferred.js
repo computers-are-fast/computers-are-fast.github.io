@@ -5,7 +5,7 @@ function _classCallCheck(instance, Constructor) {
     throw new TypeError('Cannot call a class as a function');
   }
 }
-var Promise = require("./Promise");
+var Promise = require('./Promise');
 var Deferred = (function() {
   function Deferred() {
     var _this = this;

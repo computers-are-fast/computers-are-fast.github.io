@@ -1,28 +1,28 @@
 /* */ 
 (function(process) {
   'use strict';
-  var DOMProperty = require("./DOMProperty");
-  var ReactBrowserEventEmitter = require("./ReactBrowserEventEmitter");
-  var ReactCurrentOwner = require("./ReactCurrentOwner");
-  var ReactDOMFeatureFlags = require("./ReactDOMFeatureFlags");
-  var ReactElement = require("./ReactElement");
-  var ReactEmptyComponentRegistry = require("./ReactEmptyComponentRegistry");
-  var ReactInstanceHandles = require("./ReactInstanceHandles");
-  var ReactInstanceMap = require("./ReactInstanceMap");
-  var ReactMarkupChecksum = require("./ReactMarkupChecksum");
-  var ReactPerf = require("./ReactPerf");
-  var ReactReconciler = require("./ReactReconciler");
-  var ReactUpdateQueue = require("./ReactUpdateQueue");
-  var ReactUpdates = require("./ReactUpdates");
-  var assign = require("./Object.assign");
-  var emptyObject = require("fbjs/lib/emptyObject");
-  var containsNode = require("fbjs/lib/containsNode");
-  var instantiateReactComponent = require("./instantiateReactComponent");
-  var invariant = require("fbjs/lib/invariant");
-  var setInnerHTML = require("./setInnerHTML");
-  var shouldUpdateReactComponent = require("./shouldUpdateReactComponent");
-  var validateDOMNesting = require("./validateDOMNesting");
-  var warning = require("fbjs/lib/warning");
+  var DOMProperty = require('./DOMProperty');
+  var ReactBrowserEventEmitter = require('./ReactBrowserEventEmitter');
+  var ReactCurrentOwner = require('./ReactCurrentOwner');
+  var ReactDOMFeatureFlags = require('./ReactDOMFeatureFlags');
+  var ReactElement = require('./ReactElement');
+  var ReactEmptyComponentRegistry = require('./ReactEmptyComponentRegistry');
+  var ReactInstanceHandles = require('./ReactInstanceHandles');
+  var ReactInstanceMap = require('./ReactInstanceMap');
+  var ReactMarkupChecksum = require('./ReactMarkupChecksum');
+  var ReactPerf = require('./ReactPerf');
+  var ReactReconciler = require('./ReactReconciler');
+  var ReactUpdateQueue = require('./ReactUpdateQueue');
+  var ReactUpdates = require('./ReactUpdates');
+  var assign = require('./Object.assign');
+  var emptyObject = require('fbjs/lib/emptyObject');
+  var containsNode = require('fbjs/lib/containsNode');
+  var instantiateReactComponent = require('./instantiateReactComponent');
+  var invariant = require('fbjs/lib/invariant');
+  var setInnerHTML = require('./setInnerHTML');
+  var shouldUpdateReactComponent = require('./shouldUpdateReactComponent');
+  var validateDOMNesting = require('./validateDOMNesting');
+  var warning = require('fbjs/lib/warning');
   var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
   var nodeCache = {};
   var ELEMENT_NODE_TYPE = 1;
@@ -428,4 +428,4 @@
     _mountImageIntoNode: '_mountImageIntoNode'
   });
   module.exports = ReactMount;
-})(require("process"));
+})(require('process'));

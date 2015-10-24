@@ -16,7 +16,7 @@ exports['default'] = applyMiddleware;
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {'default': obj};
 }
-var _compose = require("./compose");
+var _compose = require('./compose');
 var _compose2 = _interopRequireDefault(_compose);
 function applyMiddleware() {
   for (var _len = arguments.length,

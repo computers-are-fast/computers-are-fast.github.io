@@ -1,9 +1,9 @@
 /* */ 
 (function(process) {
   'use strict';
-  var PooledClass = require("./PooledClass");
-  var assign = require("./Object.assign");
-  var invariant = require("fbjs/lib/invariant");
+  var PooledClass = require('./PooledClass');
+  var assign = require('./Object.assign');
+  var invariant = require('fbjs/lib/invariant');
   function CallbackQueue() {
     this._callbacks = null;
     this._contexts = null;
@@ -39,4 +39,4 @@
   });
   PooledClass.addPoolingTo(CallbackQueue);
   module.exports = CallbackQueue;
-})(require("process"));
+})(require('process'));

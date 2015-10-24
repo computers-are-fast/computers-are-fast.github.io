@@ -1,12 +1,12 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactCurrentOwner = require("./ReactCurrentOwner");
-  var ReactElement = require("./ReactElement");
-  var ReactInstanceHandles = require("./ReactInstanceHandles");
-  var getIteratorFn = require("./getIteratorFn");
-  var invariant = require("fbjs/lib/invariant");
-  var warning = require("fbjs/lib/warning");
+  var ReactCurrentOwner = require('./ReactCurrentOwner');
+  var ReactElement = require('./ReactElement');
+  var ReactInstanceHandles = require('./ReactInstanceHandles');
+  var getIteratorFn = require('./getIteratorFn');
+  var invariant = require('fbjs/lib/invariant');
+  var warning = require('fbjs/lib/warning');
   var SEPARATOR = ReactInstanceHandles.SEPARATOR;
   var SUBSEPARATOR = ':';
   var userProvidedKeyEscaperLookup = {
@@ -103,4 +103,4 @@
     return traverseAllChildrenImpl(children, '', callback, traverseContext);
   }
   module.exports = traverseAllChildren;
-})(require("process"));
+})(require('process'));

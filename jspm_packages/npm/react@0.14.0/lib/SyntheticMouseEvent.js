@@ -1,8 +1,8 @@
 /* */ 
 'use strict';
-var SyntheticUIEvent = require("./SyntheticUIEvent");
-var ViewportMetrics = require("./ViewportMetrics");
-var getEventModifierState = require("./getEventModifierState");
+var SyntheticUIEvent = require('./SyntheticUIEvent');
+var ViewportMetrics = require('./ViewportMetrics');
+var getEventModifierState = require('./getEventModifierState');
 var MouseEventInterface = {
   screenX: null,
   screenY: null,

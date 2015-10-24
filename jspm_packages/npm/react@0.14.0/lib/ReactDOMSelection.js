@@ -1,8 +1,8 @@
 /* */ 
 'use strict';
-var ExecutionEnvironment = require("fbjs/lib/ExecutionEnvironment");
-var getNodeForCharacterOffset = require("./getNodeForCharacterOffset");
-var getTextContentAccessor = require("./getTextContentAccessor");
+var ExecutionEnvironment = require('fbjs/lib/ExecutionEnvironment');
+var getNodeForCharacterOffset = require('./getNodeForCharacterOffset');
+var getTextContentAccessor = require('./getTextContentAccessor');
 function isCollapsed(anchorNode, anchorOffset, focusNode, focusOffset) {
   return anchorNode === focusNode && anchorOffset === focusOffset;
 }

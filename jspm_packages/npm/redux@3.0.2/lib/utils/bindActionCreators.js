@@ -5,7 +5,7 @@ exports['default'] = bindActionCreators;
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {'default': obj};
 }
-var _utilsMapValues = require("./mapValues");
+var _utilsMapValues = require('./mapValues');
 var _utilsMapValues2 = _interopRequireDefault(_utilsMapValues);
 function bindActionCreator(actionCreator, dispatch) {
   return function() {

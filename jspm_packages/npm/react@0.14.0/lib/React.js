@@ -1,10 +1,10 @@
 /* */ 
 'use strict';
-var ReactDOM = require("./ReactDOM");
-var ReactDOMServer = require("./ReactDOMServer");
-var ReactIsomorphic = require("./ReactIsomorphic");
-var assign = require("./Object.assign");
-var deprecated = require("./deprecated");
+var ReactDOM = require('./ReactDOM');
+var ReactDOMServer = require('./ReactDOMServer');
+var ReactIsomorphic = require('./ReactIsomorphic');
+var assign = require('./Object.assign');
+var deprecated = require('./deprecated');
 var React = {};
 assign(React, ReactIsomorphic);
 assign(React, {

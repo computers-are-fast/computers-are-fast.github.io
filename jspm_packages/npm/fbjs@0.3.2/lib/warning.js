@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
   'use strict';
-  var emptyFunction = require("./emptyFunction");
+  var emptyFunction = require('./emptyFunction');
   var warning = emptyFunction;
   if (process.env.NODE_ENV !== 'production') {
     warning = function(condition, format) {
@@ -31,4 +31,4 @@
     };
   }
   module.exports = warning;
-})(require("process"));
+})(require('process'));

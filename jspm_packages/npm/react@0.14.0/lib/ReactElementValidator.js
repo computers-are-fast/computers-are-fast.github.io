@@ -1,13 +1,13 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactElement = require("./ReactElement");
-  var ReactPropTypeLocations = require("./ReactPropTypeLocations");
-  var ReactPropTypeLocationNames = require("./ReactPropTypeLocationNames");
-  var ReactCurrentOwner = require("./ReactCurrentOwner");
-  var getIteratorFn = require("./getIteratorFn");
-  var invariant = require("fbjs/lib/invariant");
-  var warning = require("fbjs/lib/warning");
+  var ReactElement = require('./ReactElement');
+  var ReactPropTypeLocations = require('./ReactPropTypeLocations');
+  var ReactPropTypeLocationNames = require('./ReactPropTypeLocationNames');
+  var ReactCurrentOwner = require('./ReactCurrentOwner');
+  var getIteratorFn = require('./getIteratorFn');
+  var invariant = require('fbjs/lib/invariant');
+  var warning = require('fbjs/lib/warning');
   function getDeclarationErrorAddendum() {
     if (ReactCurrentOwner.current) {
       var name = ReactCurrentOwner.current.getName();
@@ -158,4 +158,4 @@
     }
   };
   module.exports = ReactElementValidator;
-})(require("process"));
+})(require('process'));

@@ -1,10 +1,10 @@
 /* */ 
 'use strict';
-var React = require("./React");
-var ReactDOM = require("./ReactDOM");
-var CSSCore = require("fbjs/lib/CSSCore");
-var ReactTransitionEvents = require("./ReactTransitionEvents");
-var onlyChild = require("./onlyChild");
+var React = require('./React');
+var ReactDOM = require('./ReactDOM');
+var CSSCore = require('fbjs/lib/CSSCore');
+var ReactTransitionEvents = require('./ReactTransitionEvents');
+var onlyChild = require('./onlyChild');
 var TICK = 17;
 var ReactCSSTransitionGroupChild = React.createClass({
   displayName: 'ReactCSSTransitionGroupChild',

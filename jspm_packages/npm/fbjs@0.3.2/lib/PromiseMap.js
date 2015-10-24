@@ -6,8 +6,8 @@
       throw new TypeError('Cannot call a class as a function');
     }
   }
-  var Deferred = require("./Deferred");
-  var invariant = require("./invariant");
+  var Deferred = require('./Deferred');
+  var invariant = require('./invariant');
   var PromiseMap = (function() {
     function PromiseMap() {
       _classCallCheck(this, PromiseMap);
@@ -35,4 +35,4 @@
     return entries[key];
   }
   module.exports = PromiseMap;
-})(require("process"));
+})(require('process'));

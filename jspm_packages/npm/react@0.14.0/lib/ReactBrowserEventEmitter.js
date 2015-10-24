@@ -1,14 +1,14 @@
 /* */ 
 (function(process) {
   'use strict';
-  var EventConstants = require("./EventConstants");
-  var EventPluginHub = require("./EventPluginHub");
-  var EventPluginRegistry = require("./EventPluginRegistry");
-  var ReactEventEmitterMixin = require("./ReactEventEmitterMixin");
-  var ReactPerf = require("./ReactPerf");
-  var ViewportMetrics = require("./ViewportMetrics");
-  var assign = require("./Object.assign");
-  var isEventSupported = require("./isEventSupported");
+  var EventConstants = require('./EventConstants');
+  var EventPluginHub = require('./EventPluginHub');
+  var EventPluginRegistry = require('./EventPluginRegistry');
+  var ReactEventEmitterMixin = require('./ReactEventEmitterMixin');
+  var ReactPerf = require('./ReactPerf');
+  var ViewportMetrics = require('./ViewportMetrics');
+  var assign = require('./Object.assign');
+  var isEventSupported = require('./isEventSupported');
   var alreadyListeningTo = {};
   var isMonitoringScrollValue = false;
   var reactTopListenersCounter = 0;
@@ -160,4 +160,4 @@
     deleteListener: 'deleteListener'
   });
   module.exports = ReactBrowserEventEmitter;
-})(require("process"));
+})(require('process'));

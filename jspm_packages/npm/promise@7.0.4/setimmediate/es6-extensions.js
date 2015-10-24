@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var Promise = require("./core");
+var Promise = require('./core');
 module.exports = Promise;
 var TRUE = valuePromise(true);
 var FALSE = valuePromise(false);

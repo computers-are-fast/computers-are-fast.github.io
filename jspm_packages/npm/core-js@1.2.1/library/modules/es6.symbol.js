@@ -1,24 +1,24 @@
 /* */ 
 'use strict';
-var $ = require("./$"),
-    global = require("./$.global"),
-    has = require("./$.has"),
-    SUPPORT_DESC = require("./$.support-desc"),
-    $def = require("./$.def"),
-    $redef = require("./$.redef"),
-    $fails = require("./$.fails"),
-    shared = require("./$.shared"),
-    setTag = require("./$.tag"),
-    uid = require("./$.uid"),
-    wks = require("./$.wks"),
-    keyOf = require("./$.keyof"),
-    $names = require("./$.get-names"),
-    enumKeys = require("./$.enum-keys"),
-    isArray = require("./$.is-array"),
-    isObject = require("./$.is-object"),
-    anObject = require("./$.an-object"),
-    toIObject = require("./$.to-iobject"),
-    createDesc = require("./$.property-desc"),
+var $ = require('./$'),
+    global = require('./$.global'),
+    has = require('./$.has'),
+    SUPPORT_DESC = require('./$.support-desc'),
+    $def = require('./$.def'),
+    $redef = require('./$.redef'),
+    $fails = require('./$.fails'),
+    shared = require('./$.shared'),
+    setTag = require('./$.tag'),
+    uid = require('./$.uid'),
+    wks = require('./$.wks'),
+    keyOf = require('./$.keyof'),
+    $names = require('./$.get-names'),
+    enumKeys = require('./$.enum-keys'),
+    isArray = require('./$.is-array'),
+    isObject = require('./$.is-object'),
+    anObject = require('./$.an-object'),
+    toIObject = require('./$.to-iobject'),
+    createDesc = require('./$.property-desc'),
     getDesc = $.getDesc,
     setDesc = $.setDesc,
     _create = $.create,
@@ -162,7 +162,7 @@ if (!useNative) {
   $.setDescs = $defineProperties;
   $.getNames = $names.get = $getOwnPropertyNames;
   $.getSymbols = $getOwnPropertySymbols;
-  if (SUPPORT_DESC && !require("./$.library")) {
+  if (SUPPORT_DESC && !require('./$.library')) {
     $redef(ObjectProto, 'propertyIsEnumerable', $propertyIsEnumerable, true);
   }
 }

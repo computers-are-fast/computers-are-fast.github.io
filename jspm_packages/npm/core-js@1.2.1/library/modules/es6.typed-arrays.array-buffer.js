@@ -1,6 +1,6 @@
 /* */ 
-var $def = require("./$.def"),
-    buffer = require("./$.buffer"),
+var $def = require('./$.def'),
+    buffer = require('./$.buffer'),
     $ArrayBuffer = buffer.ArrayBuffer,
     $DataView = buffer.DataView,
     FORCED = $def.F * !buffer.useNative,

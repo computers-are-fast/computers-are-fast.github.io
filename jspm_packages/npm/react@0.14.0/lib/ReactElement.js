@@ -1,8 +1,8 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactCurrentOwner = require("./ReactCurrentOwner");
-  var assign = require("./Object.assign");
+  var ReactCurrentOwner = require('./ReactCurrentOwner');
+  var assign = require('./Object.assign');
   var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol['for']('react.element') || 0xeac7;
   var RESERVED_PROPS = {
     key: true,
@@ -149,4 +149,4 @@
     return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
   };
   module.exports = ReactElement;
-})(require("process"));
+})(require('process'));

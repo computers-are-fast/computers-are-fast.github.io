@@ -1,10 +1,10 @@
 /* */ 
 (function(process) {
-  var global = require("./$.global"),
-      macrotask = require("./$.task").set,
+  var global = require('./$.global'),
+      macrotask = require('./$.task').set,
       Observer = global.MutationObserver || global.WebKitMutationObserver,
       process = global.process,
-      isNode = require("./$.cof")(process) == 'process',
+      isNode = require('./$.cof')(process) == 'process',
       head,
       last,
       notify;
@@ -58,4 +58,4 @@
     }
     last = task;
   };
-})(require("process"));
+})(require('process'));

@@ -1,15 +1,15 @@
 /* */ 
-require("mock-modules").autoMockOff();
+require('mock-modules').autoMockOff();
 describe('es6-object-short-notation-visitors', function() {
   var transformFn;
   var destructuringVisitors;
   var shortObjectsVisitors;
   var visitors;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    transformFn = require("../../src/jstransform").transform;
-    shortObjectsVisitors = require("../es6-object-short-notation-visitors").visitorList;
-    destructuringVisitors = require("../es6-destructuring-visitors").visitorList;
+    require('mock-modules').dumpCache();
+    transformFn = require('../../src/jstransform').transform;
+    shortObjectsVisitors = require('../es6-object-short-notation-visitors').visitorList;
+    destructuringVisitors = require('../es6-destructuring-visitors').visitorList;
     visitors = shortObjectsVisitors.concat(destructuringVisitors);
   });
   function transform(code) {

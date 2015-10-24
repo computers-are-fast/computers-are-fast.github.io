@@ -1,10 +1,10 @@
 /* */ 
 "format cjs";
 if (typeof define !== 'function') {
-  var define = require("amdefine")(module, require);
+  var define = require('amdefine')(module, require);
 }
 define(function(require, exports, module) {
-  var binarySearch = require("../../lib/source-map/binary-search");
+  var binarySearch = require('../../lib/source-map/binary-search');
   function numberCompare(a, b) {
     return a - b;
   }

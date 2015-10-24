@@ -1,11 +1,11 @@
 /* */ 
-var assert = require("assert");
-var UAParser = require("../src/ua-parser");
-var browsers = require("./browser-test.json!systemjs-json");
-var cpus = require("./cpu-test.json!systemjs-json");
-var devices = require("./device-test.json!systemjs-json");
-var engines = require("./engine-test.json!systemjs-json");
-var os = require("./os-test.json!systemjs-json");
+var assert = require('assert');
+var UAParser = require('../src/ua-parser');
+var browsers = require('./browser-test.json!systemjs-json');
+var cpus = require('./cpu-test.json!systemjs-json');
+var devices = require('./device-test.json!systemjs-json');
+var engines = require('./engine-test.json!systemjs-json');
+var os = require('./os-test.json!systemjs-json');
 var parser = new UAParser();
 var methods = [{
   title: 'getBrowser',

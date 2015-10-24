@@ -1,7 +1,7 @@
 /* */ 
 'use strict';
-var emptyFunction = require("./emptyFunction");
-var nativeRequestAnimationFrame = require("./nativeRequestAnimationFrame");
+var emptyFunction = require('./emptyFunction');
+var nativeRequestAnimationFrame = require('./nativeRequestAnimationFrame');
 var lastTime = 0;
 var requestAnimationFrame = nativeRequestAnimationFrame || function(callback) {
   var currTime = Date.now();

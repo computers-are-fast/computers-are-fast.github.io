@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var isTextNode = require("./isTextNode");
+var isTextNode = require('./isTextNode');
 function containsNode(_x, _x2) {
   var _again = true;
   _function: while (_again) {

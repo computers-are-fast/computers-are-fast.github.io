@@ -1,10 +1,10 @@
 /* */ 
 "format cjs";
 if (typeof define !== 'function') {
-  var define = require("amdefine")(module, require);
+  var define = require('amdefine')(module, require);
 }
 define(function(require, exports, module) {
-  var ArraySet = require("../../lib/source-map/array-set").ArraySet;
+  var ArraySet = require('../../lib/source-map/array-set').ArraySet;
   function makeTestSet() {
     var set = new ArraySet();
     for (var i = 0; i < 100; i++) {

@@ -1,14 +1,14 @@
 /* */ 
 (function(process) {
   'use strict';
-  var CSSProperty = require("./CSSProperty");
-  var ExecutionEnvironment = require("fbjs/lib/ExecutionEnvironment");
-  var ReactPerf = require("./ReactPerf");
-  var camelizeStyleName = require("fbjs/lib/camelizeStyleName");
-  var dangerousStyleValue = require("./dangerousStyleValue");
-  var hyphenateStyleName = require("fbjs/lib/hyphenateStyleName");
-  var memoizeStringOnly = require("fbjs/lib/memoizeStringOnly");
-  var warning = require("fbjs/lib/warning");
+  var CSSProperty = require('./CSSProperty');
+  var ExecutionEnvironment = require('fbjs/lib/ExecutionEnvironment');
+  var ReactPerf = require('./ReactPerf');
+  var camelizeStyleName = require('fbjs/lib/camelizeStyleName');
+  var dangerousStyleValue = require('./dangerousStyleValue');
+  var hyphenateStyleName = require('fbjs/lib/hyphenateStyleName');
+  var memoizeStringOnly = require('fbjs/lib/memoizeStringOnly');
+  var warning = require('fbjs/lib/warning');
   var processStyleName = memoizeStringOnly(function(styleName) {
     return hyphenateStyleName(styleName);
   });
@@ -109,4 +109,4 @@
   };
   ReactPerf.measureMethods(CSSPropertyOperations, 'CSSPropertyOperations', {setValueForStyles: 'setValueForStyles'});
   module.exports = CSSPropertyOperations;
-})(require("process"));
+})(require('process'));

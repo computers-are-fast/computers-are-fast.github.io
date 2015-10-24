@@ -1,12 +1,12 @@
 /* */ 
 (function(process) {
   'use strict';
-  var Danger = require("./Danger");
-  var ReactMultiChildUpdateTypes = require("./ReactMultiChildUpdateTypes");
-  var ReactPerf = require("./ReactPerf");
-  var setInnerHTML = require("./setInnerHTML");
-  var setTextContent = require("./setTextContent");
-  var invariant = require("fbjs/lib/invariant");
+  var Danger = require('./Danger');
+  var ReactMultiChildUpdateTypes = require('./ReactMultiChildUpdateTypes');
+  var ReactPerf = require('./ReactPerf');
+  var setInnerHTML = require('./setInnerHTML');
+  var setTextContent = require('./setTextContent');
+  var invariant = require('fbjs/lib/invariant');
   function insertChildAt(parentNode, childNode, index) {
     var beforeChild = index >= parentNode.childNodes.length ? null : parentNode.childNodes.item(index);
     parentNode.insertBefore(childNode, beforeChild);
@@ -66,4 +66,4 @@
   };
   ReactPerf.measureMethods(DOMChildrenOperations, 'DOMChildrenOperations', {updateTextContent: 'updateTextContent'});
   module.exports = DOMChildrenOperations;
-})(require("process"));
+})(require('process'));

@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var SyntheticEvent = require("./SyntheticEvent");
+var SyntheticEvent = require('./SyntheticEvent');
 var ClipboardEventInterface = {clipboardData: function(event) {
     return 'clipboardData' in event ? event.clipboardData : window.clipboardData;
   }};

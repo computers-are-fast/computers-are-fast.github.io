@@ -1,20 +1,20 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactComponentEnvironment = require("./ReactComponentEnvironment");
-  var ReactCurrentOwner = require("./ReactCurrentOwner");
-  var ReactElement = require("./ReactElement");
-  var ReactInstanceMap = require("./ReactInstanceMap");
-  var ReactPerf = require("./ReactPerf");
-  var ReactPropTypeLocations = require("./ReactPropTypeLocations");
-  var ReactPropTypeLocationNames = require("./ReactPropTypeLocationNames");
-  var ReactReconciler = require("./ReactReconciler");
-  var ReactUpdateQueue = require("./ReactUpdateQueue");
-  var assign = require("./Object.assign");
-  var emptyObject = require("fbjs/lib/emptyObject");
-  var invariant = require("fbjs/lib/invariant");
-  var shouldUpdateReactComponent = require("./shouldUpdateReactComponent");
-  var warning = require("fbjs/lib/warning");
+  var ReactComponentEnvironment = require('./ReactComponentEnvironment');
+  var ReactCurrentOwner = require('./ReactCurrentOwner');
+  var ReactElement = require('./ReactElement');
+  var ReactInstanceMap = require('./ReactInstanceMap');
+  var ReactPerf = require('./ReactPerf');
+  var ReactPropTypeLocations = require('./ReactPropTypeLocations');
+  var ReactPropTypeLocationNames = require('./ReactPropTypeLocationNames');
+  var ReactReconciler = require('./ReactReconciler');
+  var ReactUpdateQueue = require('./ReactUpdateQueue');
+  var assign = require('./Object.assign');
+  var emptyObject = require('fbjs/lib/emptyObject');
+  var invariant = require('fbjs/lib/invariant');
+  var shouldUpdateReactComponent = require('./shouldUpdateReactComponent');
+  var warning = require('fbjs/lib/warning');
   function getDeclarationErrorAddendum(component) {
     var owner = component._currentElement._owner || null;
     if (owner) {
@@ -366,4 +366,4 @@
   });
   var ReactCompositeComponent = {Mixin: ReactCompositeComponentMixin};
   module.exports = ReactCompositeComponent;
-})(require("process"));
+})(require('process'));

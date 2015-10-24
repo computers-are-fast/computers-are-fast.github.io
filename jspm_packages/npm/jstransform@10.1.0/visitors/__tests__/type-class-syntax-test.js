@@ -1,15 +1,15 @@
 /* */ 
-require("mock-modules").autoMockOff();
+require('mock-modules').autoMockOff();
 describe('static type class syntax', function() {
   var classSyntaxVisitors;
   var visitorList;
   var flowSyntaxVisitors;
   var jstransform;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    classSyntaxVisitors = require("../es6-class-visitors").visitorList;
-    flowSyntaxVisitors = require("../type-syntax").visitorList;
-    jstransform = require("../../src/jstransform");
+    require('mock-modules').dumpCache();
+    classSyntaxVisitors = require('../es6-class-visitors').visitorList;
+    flowSyntaxVisitors = require('../type-syntax').visitorList;
+    jstransform = require('../../src/jstransform');
     visitorList = classSyntaxVisitors;
   });
   function transform(code, visitors) {
@@ -46,7 +46,7 @@ describe('static type class syntax', function() {
       expect((new Bar()).method1('p1', 42)).toEqual(['p1', 42]);
     });
     it('strips annotated params before a rest parameter', () => {
-      var restParamVisitors = require("../es6-rest-param-visitors").visitorList;
+      var restParamVisitors = require('../es6-rest-param-visitors').visitorList;
       var code = transform(['class Foo {', '  method1(param1: number, ...args) {', '    return [param1, args];', '  }', '}', '', 'var Bar = class {', '  method1(param1: number, ...args) {', '    return [param1, args];', '  }', '}'], restParamVisitors);
       eval(code);
       expect((new Foo()).method1(42, 43, 44)).toEqual([42, [43, 44]]);

@@ -1,9 +1,9 @@
 /* */ 
 'use strict';
-var fs = require("fs");
-var rimraf = require("rimraf");
-var acorn = require("acorn");
-var walk = require("acorn/dist/walk");
+var fs = require('fs');
+var rimraf = require('rimraf');
+var acorn = require('acorn');
+var walk = require('acorn/dist/walk');
 var ids = [];
 var names = {};
 function getIdFor(name) {

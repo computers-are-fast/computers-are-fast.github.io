@@ -1,9 +1,9 @@
 /* */ 
-var Syntax = require("esprima-fb").Syntax;
-var utils = require("../src/utils");
-var reservedWordsHelper = require("./reserved-words-helper");
-var restParamVisitors = require("./es6-rest-param-visitors");
-var restPropertyHelpers = require("./es7-rest-property-helpers");
+var Syntax = require('esprima-fb').Syntax;
+var utils = require('../src/utils');
+var reservedWordsHelper = require('./reserved-words-helper');
+var restParamVisitors = require('./es6-rest-param-visitors');
+var restPropertyHelpers = require('./es7-rest-property-helpers');
 function visitStructuredVariable(traverse, node, path, state) {
   utils.append(utils.getTempVar(state.localScope.tempVarIndex) + '=', state);
   utils.catchupWhiteSpace(node.init.range[0], state);

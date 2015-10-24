@@ -1,8 +1,8 @@
 /* */ 
 'use strict';
-var ExecutionEnvironment = require("fbjs/lib/ExecutionEnvironment");
-var escapeTextContentForBrowser = require("./escapeTextContentForBrowser");
-var setInnerHTML = require("./setInnerHTML");
+var ExecutionEnvironment = require('fbjs/lib/ExecutionEnvironment');
+var escapeTextContentForBrowser = require('./escapeTextContentForBrowser');
+var setInnerHTML = require('./setInnerHTML');
 var setTextContent = function(node, text) {
   node.textContent = text;
 };

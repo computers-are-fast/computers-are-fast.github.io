@@ -6,4 +6,4 @@
     Object.freeze(emptyObject);
   }
   module.exports = emptyObject;
-})(require("process"));
+})(require('process'));

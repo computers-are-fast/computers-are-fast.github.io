@@ -1,8 +1,8 @@
 /* */ 
 'use strict';
-var assign = require("./Object.assign");
-var emptyFunction = require("fbjs/lib/emptyFunction");
-var joinClasses = require("fbjs/lib/joinClasses");
+var assign = require('./Object.assign');
+var emptyFunction = require('fbjs/lib/emptyFunction');
+var joinClasses = require('fbjs/lib/joinClasses');
 function createTransferStrategy(mergeStrategy) {
   return function(props, key, value) {
     if (!props.hasOwnProperty(key)) {

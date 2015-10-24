@@ -1,8 +1,8 @@
 /* */ 
-var fs = require("fs");
-var util = require("util");
-var assert = require("assert");
-var jsTokens = require("../index");
+var fs = require('fs');
+var util = require('util');
+var assert = require('assert');
+var jsTokens = require('../index');
 suite("jsTokens", function() {
   test("is a regex", function() {
     assert(util.isRegExp(jsTokens));

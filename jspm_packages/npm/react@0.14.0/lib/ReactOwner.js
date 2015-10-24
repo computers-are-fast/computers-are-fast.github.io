@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
   'use strict';
-  var invariant = require("fbjs/lib/invariant");
+  var invariant = require('fbjs/lib/invariant');
   var ReactOwner = {
     isValidOwner: function(object) {
       return !!(object && typeof object.attachRef === 'function' && typeof object.detachRef === 'function');
@@ -18,4 +18,4 @@
     }
   };
   module.exports = ReactOwner;
-})(require("process"));
+})(require('process'));

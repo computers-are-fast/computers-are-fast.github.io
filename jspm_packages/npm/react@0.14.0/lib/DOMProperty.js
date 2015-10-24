@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
   'use strict';
-  var invariant = require("fbjs/lib/invariant");
+  var invariant = require('fbjs/lib/invariant');
   function checkMask(value, bitmask) {
     return (value & bitmask) === bitmask;
   }
@@ -96,4 +96,4 @@
     injection: DOMPropertyInjection
   };
   module.exports = DOMProperty;
-})(require("process"));
+})(require('process'));

@@ -24,4 +24,4 @@
     }
   };
   module.exports = invariant;
-})(require("process"));
+})(require('process'));

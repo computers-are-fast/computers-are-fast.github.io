@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var performance = require("./performance");
+var performance = require('./performance');
 var curPerformance = performance;
 if (!curPerformance || !curPerformance.now) {
   curPerformance = Date;

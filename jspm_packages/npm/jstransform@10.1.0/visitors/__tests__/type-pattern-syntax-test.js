@@ -1,13 +1,13 @@
 /* */ 
-require("mock-modules").autoMockOff();
+require('mock-modules').autoMockOff();
 describe('static type pattern syntax', function() {
   var flowSyntaxVisitors;
   var jstransform;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    flowSyntaxVisitors = require("../type-syntax").visitorList;
-    jstransform = require("../../src/jstransform");
-    destructuringVisitors = require("../es6-destructuring-visitors");
+    require('mock-modules').dumpCache();
+    flowSyntaxVisitors = require('../type-syntax').visitorList;
+    jstransform = require('../../src/jstransform');
+    destructuringVisitors = require('../es6-destructuring-visitors');
     visitorList = destructuringVisitors.visitorList;
   });
   function transform(code, visitors) {

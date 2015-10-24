@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactOwner = require("./ReactOwner");
+  var ReactOwner = require('./ReactOwner');
   var ReactRef = {};
   function attachRef(ref, component, owner) {
     if (typeof ref === 'function') {
@@ -41,4 +41,4 @@
     }
   };
   module.exports = ReactRef;
-})(require("process"));
+})(require('process'));

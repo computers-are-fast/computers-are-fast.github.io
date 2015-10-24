@@ -1,9 +1,9 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactElement = require("./ReactElement");
-  var ReactElementValidator = require("./ReactElementValidator");
-  var mapObject = require("fbjs/lib/mapObject");
+  var ReactElement = require('./ReactElement');
+  var ReactElementValidator = require('./ReactElementValidator');
+  var mapObject = require('fbjs/lib/mapObject');
   function createDOMFactory(tag) {
     if (process.env.NODE_ENV !== 'production') {
       return ReactElementValidator.createFactory(tag);
@@ -145,4 +145,4 @@
     tspan: 'tspan'
   }, createDOMFactory);
   module.exports = ReactDOMFactories;
-})(require("process"));
+})(require('process'));

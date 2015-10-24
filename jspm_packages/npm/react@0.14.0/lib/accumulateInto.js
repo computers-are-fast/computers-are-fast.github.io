@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
   'use strict';
-  var invariant = require("fbjs/lib/invariant");
+  var invariant = require('fbjs/lib/invariant');
   function accumulateInto(current, next) {
     !(next != null) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'accumulateInto(...): Accumulated items must not be null or undefined.') : invariant(false) : undefined;
     if (current == null) {
@@ -23,4 +23,4 @@
     return [current, next];
   }
   module.exports = accumulateInto;
-})(require("process"));
+})(require('process'));

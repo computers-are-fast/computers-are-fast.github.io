@@ -1,10 +1,10 @@
 /* */ 
 (function(Buffer, process) {
   module.exports = Writable;
-  var Buffer = require("buffer").Buffer;
+  var Buffer = require('buffer').Buffer;
   Writable.WritableState = WritableState;
-  var util = require("core-util-is");
-  util.inherits = require("inherits");
+  var util = require('core-util-is');
+  util.inherits = require('inherits');
   var Stream = require('stream-browserify/index');
   util.inherits(Writable, Stream);
   function WriteReq(chunk, encoding, cb) {
@@ -13,7 +13,7 @@
     this.callback = cb;
   }
   function WritableState(options, stream) {
-    var Duplex = require("./_stream_duplex");
+    var Duplex = require('./_stream_duplex');
     options = options || {};
     var hwm = options.highWaterMark;
     var defaultHwm = options.objectMode ? 16 : 16 * 1024;
@@ -45,7 +45,7 @@
     this.errorEmitted = false;
   }
   function Writable(options) {
-    var Duplex = require("./_stream_duplex");
+    var Duplex = require('./_stream_duplex');
     if (!(this instanceof Writable) && !(this instanceof Duplex))
       return new Writable(options);
     this._writableState = new WritableState(options, this);
@@ -281,4 +281,4 @@
     }
     state.ended = true;
   }
-})(require("buffer").Buffer, require("process"));
+})(require('buffer').Buffer, require('process'));

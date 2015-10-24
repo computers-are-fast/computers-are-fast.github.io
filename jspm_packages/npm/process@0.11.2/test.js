@@ -1,6 +1,6 @@
 /* */ 
-var assert = require("assert");
-var ourProcess = require("./browser");
+var assert = require('assert');
+var ourProcess = require('./browser');
 describe('test against process', function() {
   test(process);
 });

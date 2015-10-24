@@ -7,8 +7,8 @@
       options,
       syntax;
   if (typeof require === 'function') {
-    fs = require("fs");
-    esprima = require("esprima");
+    fs = require('fs');
+    esprima = require('esprima');
   } else if (typeof load === 'function') {
     try {
       load('esprima.js');
@@ -87,4 +87,4 @@
     console.log('Error: ' + e.message);
     process.exit(1);
   }
-})(require("process"));
+})(require('process'));

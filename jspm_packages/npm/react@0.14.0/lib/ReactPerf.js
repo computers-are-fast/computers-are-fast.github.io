@@ -39,4 +39,4 @@
     return func;
   }
   module.exports = ReactPerf;
-})(require("process"));
+})(require('process'));

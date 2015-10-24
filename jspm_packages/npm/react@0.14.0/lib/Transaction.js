@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
   'use strict';
-  var invariant = require("fbjs/lib/invariant");
+  var invariant = require('fbjs/lib/invariant');
   var Mixin = {
     reinitializeTransaction: function() {
       this.transactionWrappers = this.getTransactionWrappers();
@@ -87,4 +87,4 @@
     OBSERVED_ERROR: {}
   };
   module.exports = Transaction;
-})(require("process"));
+})(require('process'));

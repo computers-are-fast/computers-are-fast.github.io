@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var React = require("./React");
+var React = require('./React');
 function ReactLink(value, requestChange) {
   this.value = value;
   this.requestChange = requestChange;

@@ -1,6 +1,6 @@
 /* */ 
-var esprima = require("esprima-fb");
-var utils = require("../src/utils");
+var esprima = require('esprima-fb');
+var utils = require('../src/utils');
 var Syntax = esprima.Syntax;
 function _isFunctionNode(node) {
   return node.type === Syntax.FunctionDeclaration || node.type === Syntax.FunctionExpression || node.type === Syntax.ArrowFunctionExpression;

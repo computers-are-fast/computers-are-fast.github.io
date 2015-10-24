@@ -1,9 +1,9 @@
 /* */ 
 (function(process) {
   'use strict';
-  var assign = require("./Object.assign");
-  var emptyFunction = require("fbjs/lib/emptyFunction");
-  var warning = require("fbjs/lib/warning");
+  var assign = require('./Object.assign');
+  var emptyFunction = require('fbjs/lib/emptyFunction');
+  var warning = require('fbjs/lib/warning');
   var validateDOMNesting = emptyFunction;
   if (process.env.NODE_ENV !== 'production') {
     var specialTags = ['address', 'applet', 'area', 'article', 'aside', 'base', 'basefont', 'bgsound', 'blockquote', 'body', 'br', 'button', 'caption', 'center', 'col', 'colgroup', 'dd', 'details', 'dir', 'div', 'dl', 'dt', 'embed', 'fieldset', 'figcaption', 'figure', 'footer', 'form', 'frame', 'frameset', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'header', 'hgroup', 'hr', 'html', 'iframe', 'img', 'input', 'isindex', 'li', 'link', 'listing', 'main', 'marquee', 'menu', 'menuitem', 'meta', 'nav', 'noembed', 'noframes', 'noscript', 'object', 'ol', 'p', 'param', 'plaintext', 'pre', 'script', 'section', 'select', 'source', 'style', 'summary', 'table', 'tbody', 'td', 'template', 'textarea', 'tfoot', 'th', 'thead', 'title', 'tr', 'track', 'ul', 'wbr', 'xmp'];
@@ -235,4 +235,4 @@
     };
   }
   module.exports = validateDOMNesting;
-})(require("process"));
+})(require('process'));

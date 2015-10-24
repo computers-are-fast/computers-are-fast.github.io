@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
   'use strict';
-  var invariant = require("./invariant");
+  var invariant = require('./invariant');
   var keyMirror = function(obj) {
     var ret = {};
     var key;
@@ -15,4 +15,4 @@
     return ret;
   };
   module.exports = keyMirror;
-})(require("process"));
+})(require('process'));

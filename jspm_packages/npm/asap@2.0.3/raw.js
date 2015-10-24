@@ -38,7 +38,7 @@
     var parentDomain = process.domain;
     if (parentDomain) {
       if (!domain) {
-        domain = require("domain");
+        domain = require('domain');
       }
       domain.active = process.domain = null;
     }
@@ -51,4 +51,4 @@
       domain.active = process.domain = parentDomain;
     }
   }
-})(require("process"));
+})(require('process'));

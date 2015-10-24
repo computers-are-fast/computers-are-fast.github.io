@@ -1,11 +1,11 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactChildren = require("./ReactChildren");
-  var ReactElement = require("./ReactElement");
-  var emptyFunction = require("fbjs/lib/emptyFunction");
-  var invariant = require("fbjs/lib/invariant");
-  var warning = require("fbjs/lib/warning");
+  var ReactChildren = require('./ReactChildren');
+  var ReactElement = require('./ReactElement');
+  var emptyFunction = require('fbjs/lib/emptyFunction');
+  var invariant = require('fbjs/lib/invariant');
+  var warning = require('fbjs/lib/warning');
   var numericPropertyRegex = /^\d+$/;
   var warnedAboutNumeric = false;
   var ReactFragment = {create: function(object) {
@@ -31,4 +31,4 @@
       return result;
     }};
   module.exports = ReactFragment;
-})(require("process"));
+})(require('process'));

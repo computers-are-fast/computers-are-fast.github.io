@@ -1,6 +1,6 @@
 /* */ 
-var Syntax = require("esprima-fb").Syntax;
-var utils = require("../src/utils");
+var Syntax = require('esprima-fb').Syntax;
+var utils = require('../src/utils');
 function visitObjectLiteralShortNotation(traverse, node, path, state) {
   utils.catchup(node.key.range[1], state);
   utils.append(':' + node.key.name, state);

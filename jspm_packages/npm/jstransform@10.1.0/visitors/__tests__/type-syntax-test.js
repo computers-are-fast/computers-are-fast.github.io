@@ -14,10 +14,10 @@ if (!!module.parent) {
     'Typecasts': ['(xxx: number)', '({xxx: 0, yyy: "hey"}: {xxx: number; yyy: string})', '((xxx) => xxx + 1: (xxx: number) => number)', '((xxx: number), (yyy: string))', '((xxx: any): number)']
   };
 } else {
-  require("mock-modules").autoMockOff();
-  var tests = require("./gen/type-syntax-test.rec");
-  var jstransform = require("../../src/jstransform");
-  var visitors = require("../type-syntax").visitorList;
+  require('mock-modules').autoMockOff();
+  var tests = require('./gen/type-syntax-test.rec');
+  var jstransform = require('../../src/jstransform');
+  var visitors = require('../type-syntax').visitorList;
   describe('transforms match expectations', function() {
     for (var section in tests) {
       for (var test in tests[section]) {

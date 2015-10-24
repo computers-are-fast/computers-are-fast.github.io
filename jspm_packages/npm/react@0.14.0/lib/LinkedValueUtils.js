@@ -1,10 +1,10 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactPropTypes = require("./ReactPropTypes");
-  var ReactPropTypeLocations = require("./ReactPropTypeLocations");
-  var invariant = require("fbjs/lib/invariant");
-  var warning = require("fbjs/lib/warning");
+  var ReactPropTypes = require('./ReactPropTypes');
+  var ReactPropTypeLocations = require('./ReactPropTypeLocations');
+  var invariant = require('fbjs/lib/invariant');
+  var warning = require('fbjs/lib/warning');
   var hasReadOnlyValue = {
     'button': true,
     'checkbox': true,
@@ -90,4 +90,4 @@
     }
   };
   module.exports = LinkedValueUtils;
-})(require("process"));
+})(require('process'));

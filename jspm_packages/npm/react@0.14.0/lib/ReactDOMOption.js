@@ -1,10 +1,10 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactChildren = require("./ReactChildren");
-  var ReactDOMSelect = require("./ReactDOMSelect");
-  var assign = require("./Object.assign");
-  var warning = require("fbjs/lib/warning");
+  var ReactChildren = require('./ReactChildren');
+  var ReactDOMSelect = require('./ReactDOMSelect');
+  var assign = require('./Object.assign');
+  var warning = require('fbjs/lib/warning');
   var valueContextKey = ReactDOMSelect.valueContextKey;
   var ReactDOMOption = {
     mountWrapper: function(inst, props, context) {
@@ -52,4 +52,4 @@
     }
   };
   module.exports = ReactDOMOption;
-})(require("process"));
+})(require('process'));

@@ -1,7 +1,7 @@
 /* */ 
-var Syntax = require("esprima-fb").Syntax;
-var utils = require("../src/utils");
-var reservedWordsHelper = require("./reserved-words-helper");
+var Syntax = require('esprima-fb').Syntax;
+var utils = require('../src/utils');
+var reservedWordsHelper = require('./reserved-words-helper');
 function visitObjectConciseMethod(traverse, node, path, state) {
   var isGenerator = node.value.generator;
   if (isGenerator) {

@@ -6,12 +6,12 @@
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {'default': obj};
   }
-  var _createStore = require("../createStore");
-  var _utilsIsPlainObject = require("./isPlainObject");
+  var _createStore = require('../createStore');
+  var _utilsIsPlainObject = require('./isPlainObject');
   var _utilsIsPlainObject2 = _interopRequireDefault(_utilsIsPlainObject);
-  var _utilsMapValues = require("./mapValues");
+  var _utilsMapValues = require('./mapValues');
   var _utilsMapValues2 = _interopRequireDefault(_utilsMapValues);
-  var _utilsPick = require("./pick");
+  var _utilsPick = require('./pick');
   var _utilsPick2 = _interopRequireDefault(_utilsPick);
   function getUndefinedStateErrorMessage(key, action) {
     var actionType = action && action.type;
@@ -84,4 +84,4 @@
     };
   }
   module.exports = exports['default'];
-})(require("process"));
+})(require('process'));

@@ -1,11 +1,11 @@
 /* */ 
 (function(process) {
   'use strict';
-  var DOMChildrenOperations = require("./DOMChildrenOperations");
-  var DOMPropertyOperations = require("./DOMPropertyOperations");
-  var ReactMount = require("./ReactMount");
-  var ReactPerf = require("./ReactPerf");
-  var invariant = require("fbjs/lib/invariant");
+  var DOMChildrenOperations = require('./DOMChildrenOperations');
+  var DOMPropertyOperations = require('./DOMPropertyOperations');
+  var ReactMount = require('./ReactMount');
+  var ReactPerf = require('./ReactPerf');
+  var invariant = require('fbjs/lib/invariant');
   var INVALID_PROPERTY_ERRORS = {
     dangerouslySetInnerHTML: '`dangerouslySetInnerHTML` must be set using `updateInnerHTMLByID()`.',
     style: '`style` must be set using `updateStylesByID()`.'
@@ -36,4 +36,4 @@
     dangerouslyProcessChildrenUpdates: 'dangerouslyProcessChildrenUpdates'
   });
   module.exports = ReactDOMIDOperations;
-})(require("process"));
+})(require('process'));

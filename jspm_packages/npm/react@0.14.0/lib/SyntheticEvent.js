@@ -1,10 +1,10 @@
 /* */ 
 (function(process) {
   'use strict';
-  var PooledClass = require("./PooledClass");
-  var assign = require("./Object.assign");
-  var emptyFunction = require("fbjs/lib/emptyFunction");
-  var warning = require("fbjs/lib/warning");
+  var PooledClass = require('./PooledClass');
+  var assign = require('./Object.assign');
+  var emptyFunction = require('fbjs/lib/emptyFunction');
+  var warning = require('fbjs/lib/warning');
   var EventInterface = {
     type: null,
     currentTarget: emptyFunction.thatReturnsNull,
@@ -102,4 +102,4 @@
   };
   PooledClass.addPoolingTo(SyntheticEvent, PooledClass.fourArgumentPooler);
   module.exports = SyntheticEvent;
-})(require("process"));
+})(require('process'));

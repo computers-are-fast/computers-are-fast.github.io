@@ -1,11 +1,11 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactReconciler = require("./ReactReconciler");
-  var instantiateReactComponent = require("./instantiateReactComponent");
-  var shouldUpdateReactComponent = require("./shouldUpdateReactComponent");
-  var traverseAllChildren = require("./traverseAllChildren");
-  var warning = require("fbjs/lib/warning");
+  var ReactReconciler = require('./ReactReconciler');
+  var instantiateReactComponent = require('./instantiateReactComponent');
+  var shouldUpdateReactComponent = require('./shouldUpdateReactComponent');
+  var traverseAllChildren = require('./traverseAllChildren');
+  var warning = require('fbjs/lib/warning');
   function instantiateChild(childInstances, child, name) {
     var keyUnique = childInstances[name] === undefined;
     if (process.env.NODE_ENV !== 'production') {
@@ -64,4 +64,4 @@
     }
   };
   module.exports = ReactChildReconciler;
-})(require("process"));
+})(require('process'));

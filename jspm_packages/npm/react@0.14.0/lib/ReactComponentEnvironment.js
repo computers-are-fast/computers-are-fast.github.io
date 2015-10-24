@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
   'use strict';
-  var invariant = require("fbjs/lib/invariant");
+  var invariant = require('fbjs/lib/invariant');
   var injected = false;
   var ReactComponentEnvironment = {
     unmountIDFromEnvironment: null,
@@ -16,4 +16,4 @@
       }}
   };
   module.exports = ReactComponentEnvironment;
-})(require("process"));
+})(require('process'));

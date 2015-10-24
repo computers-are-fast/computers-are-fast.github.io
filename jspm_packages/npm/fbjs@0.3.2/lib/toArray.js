@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
   'use strict';
-  var invariant = require("./invariant");
+  var invariant = require('./invariant');
   function toArray(obj) {
     var length = obj.length;
     !(!Array.isArray(obj) && (typeof obj === 'object' || typeof obj === 'function')) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'toArray: Array-like object expected') : invariant(false) : undefined;
@@ -19,4 +19,4 @@
     return ret;
   }
   module.exports = toArray;
-})(require("process"));
+})(require('process'));

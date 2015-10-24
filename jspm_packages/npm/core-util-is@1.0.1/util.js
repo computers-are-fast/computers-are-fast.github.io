@@ -63,4 +63,4 @@
   function objectToString(o) {
     return Object.prototype.toString.call(o);
   }
-})(require("buffer").Buffer);
+})(require('buffer').Buffer);

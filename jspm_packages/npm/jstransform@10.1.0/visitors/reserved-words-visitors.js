@@ -1,7 +1,7 @@
 /* */ 
-var Syntax = require("esprima-fb").Syntax;
-var utils = require("../src/utils");
-var reserverdWordsHelper = require("./reserved-words-helper");
+var Syntax = require('esprima-fb').Syntax;
+var utils = require('../src/utils');
+var reserverdWordsHelper = require('./reserved-words-helper');
 function visitProperty(traverse, node, path, state) {
   utils.catchup(node.key.range[0], state);
   utils.append('"', state);

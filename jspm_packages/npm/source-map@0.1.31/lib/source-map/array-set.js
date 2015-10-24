@@ -1,10 +1,10 @@
 /* */ 
 "format cjs";
 if (typeof define !== 'function') {
-  var define = require("amdefine")(module, require);
+  var define = require('amdefine')(module, require);
 }
 define(function(require, exports, module) {
-  var util = require("./util");
+  var util = require('./util');
   function ArraySet() {
     this._array = [];
     this._set = {};

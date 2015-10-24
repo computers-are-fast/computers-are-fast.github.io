@@ -1,12 +1,12 @@
 /* */ 
-require("mock-modules").autoMockOff();
+require('mock-modules').autoMockOff();
 describe('es6ArrowFunctionsTransform', function() {
   var transformFn;
   var visitors;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    visitors = require("../es6-arrow-function-visitors").visitorList;
-    transformFn = require("../../src/jstransform").transform;
+    require('mock-modules').dumpCache();
+    visitors = require('../es6-arrow-function-visitors').visitorList;
+    transformFn = require('../../src/jstransform').transform;
   });
   function transform(code) {
     return transformFn(visitors, code).code;

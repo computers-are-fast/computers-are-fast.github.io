@@ -1,12 +1,12 @@
 /* */ 
-require("mock-modules").autoMockOff();
+require('mock-modules').autoMockOff();
 describe('static type interface syntax', function() {
   var flowSyntaxVisitors;
   var jstransform;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    flowSyntaxVisitors = require("../type-syntax").visitorList;
-    jstransform = require("../../src/jstransform");
+    require('mock-modules').dumpCache();
+    flowSyntaxVisitors = require('../type-syntax').visitorList;
+    jstransform = require('../../src/jstransform');
   });
   function transform(code, visitors) {
     code = jstransform.transform(flowSyntaxVisitors, code.join('\n')).code;

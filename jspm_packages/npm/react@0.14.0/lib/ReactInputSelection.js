@@ -1,9 +1,9 @@
 /* */ 
 'use strict';
-var ReactDOMSelection = require("./ReactDOMSelection");
-var containsNode = require("fbjs/lib/containsNode");
-var focusNode = require("fbjs/lib/focusNode");
-var getActiveElement = require("fbjs/lib/getActiveElement");
+var ReactDOMSelection = require('./ReactDOMSelection');
+var containsNode = require('fbjs/lib/containsNode');
+var focusNode = require('fbjs/lib/focusNode');
+var getActiveElement = require('fbjs/lib/getActiveElement');
 function isInDocument(node) {
   return containsNode(document.documentElement, node);
 }

@@ -34727,4 +34727,4 @@
           }
         }
       };
-})(require("process"));
+})(require('process'));

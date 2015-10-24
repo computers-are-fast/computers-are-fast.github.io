@@ -1,6 +1,6 @@
 /* */ 
 (function(process) {
-  var Stream = require("stream");
+  var Stream = require('stream');
   exports = module.exports = through;
   through.through = through;
   function through(write, end, opts) {
@@ -90,4 +90,4 @@
     };
     return stream;
   }
-})(require("process"));
+})(require('process'));

@@ -2,11 +2,11 @@
 "format cjs";
 (function(process) {
   if (typeof define !== 'function') {
-    var define = require("amdefine")(module, require);
+    var define = require('amdefine')(module, require);
   }
   define(function(require, exports, module) {
-    var SourceMapGenerator = require("./source-map-generator").SourceMapGenerator;
-    var util = require("./util");
+    var SourceMapGenerator = require('./source-map-generator').SourceMapGenerator;
+    var util = require('./util');
     function SourceNode(aLine, aColumn, aSource, aChunks, aName) {
       this.children = [];
       this.sourceContents = {};
@@ -231,4 +231,4 @@
     };
     exports.SourceNode = SourceNode;
   });
-})(require("process"));
+})(require('process'));

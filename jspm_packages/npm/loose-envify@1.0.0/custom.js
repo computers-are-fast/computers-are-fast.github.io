@@ -1,2 +1,2 @@
 /* */ 
-module.exports = require("./loose-envify");
+module.exports = require('./loose-envify');

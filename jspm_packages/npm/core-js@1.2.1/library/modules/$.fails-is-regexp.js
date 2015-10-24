@@ -5,7 +5,7 @@ module.exports = function(KEY) {
     '/./'[KEY](re);
   } catch (e) {
     try {
-      re[require("./$.wks")('match')] = false;
+      re[require('./$.wks')('match')] = false;
       return !'/./'[KEY](re);
     } catch (e) {}
   }

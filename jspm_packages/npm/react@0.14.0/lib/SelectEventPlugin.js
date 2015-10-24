@@ -1,14 +1,14 @@
 /* */ 
 'use strict';
-var EventConstants = require("./EventConstants");
-var EventPropagators = require("./EventPropagators");
-var ExecutionEnvironment = require("fbjs/lib/ExecutionEnvironment");
-var ReactInputSelection = require("./ReactInputSelection");
-var SyntheticEvent = require("./SyntheticEvent");
-var getActiveElement = require("fbjs/lib/getActiveElement");
-var isTextInputElement = require("./isTextInputElement");
-var keyOf = require("fbjs/lib/keyOf");
-var shallowEqual = require("fbjs/lib/shallowEqual");
+var EventConstants = require('./EventConstants');
+var EventPropagators = require('./EventPropagators');
+var ExecutionEnvironment = require('fbjs/lib/ExecutionEnvironment');
+var ReactInputSelection = require('./ReactInputSelection');
+var SyntheticEvent = require('./SyntheticEvent');
+var getActiveElement = require('fbjs/lib/getActiveElement');
+var isTextInputElement = require('./isTextInputElement');
+var keyOf = require('fbjs/lib/keyOf');
+var shallowEqual = require('fbjs/lib/shallowEqual');
 var topLevelTypes = EventConstants.topLevelTypes;
 var skipSelectionChangeEvent = ExecutionEnvironment.canUseDOM && 'documentMode' in document && document.documentMode <= 11;
 var eventTypes = {select: {

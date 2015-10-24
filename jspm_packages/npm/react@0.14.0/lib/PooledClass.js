@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
   'use strict';
-  var invariant = require("fbjs/lib/invariant");
+  var invariant = require('fbjs/lib/invariant');
   var oneArgumentPooler = function(copyFieldsFrom) {
     var Klass = this;
     if (Klass.instancePool.length) {
@@ -81,4 +81,4 @@
     fiveArgumentPooler: fiveArgumentPooler
   };
   module.exports = PooledClass;
-})(require("process"));
+})(require('process'));

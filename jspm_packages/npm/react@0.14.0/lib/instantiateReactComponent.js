@@ -1,12 +1,12 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactCompositeComponent = require("./ReactCompositeComponent");
-  var ReactEmptyComponent = require("./ReactEmptyComponent");
-  var ReactNativeComponent = require("./ReactNativeComponent");
-  var assign = require("./Object.assign");
-  var invariant = require("fbjs/lib/invariant");
-  var warning = require("fbjs/lib/warning");
+  var ReactCompositeComponent = require('./ReactCompositeComponent');
+  var ReactEmptyComponent = require('./ReactEmptyComponent');
+  var ReactNativeComponent = require('./ReactNativeComponent');
+  var assign = require('./Object.assign');
+  var invariant = require('fbjs/lib/invariant');
+  var warning = require('fbjs/lib/warning');
   var ReactCompositeComponentWrapper = function() {};
   assign(ReactCompositeComponentWrapper.prototype, ReactCompositeComponent.Mixin, {_instantiateReactComponent: instantiateReactComponent});
   function getDeclarationErrorAddendum(owner) {
@@ -58,4 +58,4 @@
     return instance;
   }
   module.exports = instantiateReactComponent;
-})(require("process"));
+})(require('process'));

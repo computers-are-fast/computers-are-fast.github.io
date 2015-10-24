@@ -1,5 +1,5 @@
 /* */ 
-var util = require("util");
+var util = require('util');
 var pSlice = Array.prototype.slice;
 var hasOwn = Object.prototype.hasOwnProperty;
 var assert = module.exports = ok;

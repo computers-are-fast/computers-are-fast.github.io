@@ -1,9 +1,9 @@
 /* */ 
 (function(process) {
-  var assert = require("assert");
-  var fs = require("fs");
-  var path = require("path");
-  var util = require("./source-map/util");
+  var assert = require('assert');
+  var fs = require('fs');
+  var path = require('path');
+  var util = require('./source-map/util');
   function run(tests) {
     var failures = [];
     var total = 0;
@@ -47,4 +47,4 @@
     };
   }));
   process.exit(code);
-})(require("process"));
+})(require('process'));

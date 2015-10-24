@@ -1,7 +1,7 @@
 /* */ 
 "use strict";
-var esprima = require("esprima-fb");
-var utils = require("./utils");
+var esprima = require('esprima-fb');
+var utils = require('./utils');
 var getBoundaryNode = utils.getBoundaryNode;
 var declareIdentInScope = utils.declareIdentInLocalScope;
 var initScopeMetadata = utils.initScopeMetadata;
@@ -161,7 +161,7 @@ function transform(visitors, source, options) {
   var state = utils.createState(source, ast, options);
   state.g.visitors = visitors;
   if (options.sourceMap) {
-    var SourceMapGenerator = require("source-map").SourceMapGenerator;
+    var SourceMapGenerator = require('source-map').SourceMapGenerator;
     state.g.sourceMap = new SourceMapGenerator({file: options.filename || 'transformed.js'});
   }
   traverse(ast, [], state);

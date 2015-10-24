@@ -1,8 +1,8 @@
 /* */ 
 (function(process) {
   'use strict';
-  var traverseAllChildren = require("./traverseAllChildren");
-  var warning = require("fbjs/lib/warning");
+  var traverseAllChildren = require('./traverseAllChildren');
+  var warning = require('fbjs/lib/warning');
   function flattenSingleChildIntoContext(traverseContext, child, name) {
     var result = traverseContext;
     var keyUnique = result[name] === undefined;
@@ -22,4 +22,4 @@
     return result;
   }
   module.exports = flattenChildren;
-})(require("process"));
+})(require('process'));

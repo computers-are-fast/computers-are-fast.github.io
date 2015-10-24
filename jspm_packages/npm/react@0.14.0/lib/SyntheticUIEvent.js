@@ -1,7 +1,7 @@
 /* */ 
 'use strict';
-var SyntheticEvent = require("./SyntheticEvent");
-var getEventTarget = require("./getEventTarget");
+var SyntheticEvent = require('./SyntheticEvent');
+var getEventTarget = require('./getEventTarget');
 var UIEventInterface = {
   view: function(event) {
     if (event.view) {

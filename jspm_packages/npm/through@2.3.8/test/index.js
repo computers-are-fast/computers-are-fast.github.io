@@ -1,8 +1,8 @@
 /* */ 
 (function(process) {
-  var test = require("tape");
-  var spec = require("stream-spec");
-  var through = require("../../through@2.3.8");
+  var test = require('tape');
+  var spec = require('stream-spec');
+  var through = require('../index');
   function write(array, stream) {
     array = array.slice();
     function next() {
@@ -95,4 +95,4 @@
     assert.equal(count, 2);
     assert.end();
   });
-})(require("process"));
+})(require('process'));

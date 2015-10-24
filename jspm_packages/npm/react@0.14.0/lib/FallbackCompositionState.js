@@ -1,8 +1,8 @@
 /* */ 
 'use strict';
-var PooledClass = require("./PooledClass");
-var assign = require("./Object.assign");
-var getTextContentAccessor = require("./getTextContentAccessor");
+var PooledClass = require('./PooledClass');
+var assign = require('./Object.assign');
+var getTextContentAccessor = require('./getTextContentAccessor');
 function FallbackCompositionState(root) {
   this._root = root;
   this._startText = this.getText();

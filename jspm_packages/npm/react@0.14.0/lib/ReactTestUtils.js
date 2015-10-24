@@ -1,23 +1,23 @@
 /* */ 
 (function(process) {
   'use strict';
-  var EventConstants = require("./EventConstants");
-  var EventPluginHub = require("./EventPluginHub");
-  var EventPropagators = require("./EventPropagators");
-  var React = require("./React");
-  var ReactDOM = require("./ReactDOM");
-  var ReactElement = require("./ReactElement");
-  var ReactBrowserEventEmitter = require("./ReactBrowserEventEmitter");
-  var ReactCompositeComponent = require("./ReactCompositeComponent");
-  var ReactInstanceHandles = require("./ReactInstanceHandles");
-  var ReactInstanceMap = require("./ReactInstanceMap");
-  var ReactMount = require("./ReactMount");
-  var ReactUpdates = require("./ReactUpdates");
-  var SyntheticEvent = require("./SyntheticEvent");
-  var assign = require("./Object.assign");
-  var emptyObject = require("fbjs/lib/emptyObject");
-  var findDOMNode = require("./findDOMNode");
-  var invariant = require("fbjs/lib/invariant");
+  var EventConstants = require('./EventConstants');
+  var EventPluginHub = require('./EventPluginHub');
+  var EventPropagators = require('./EventPropagators');
+  var React = require('./React');
+  var ReactDOM = require('./ReactDOM');
+  var ReactElement = require('./ReactElement');
+  var ReactBrowserEventEmitter = require('./ReactBrowserEventEmitter');
+  var ReactCompositeComponent = require('./ReactCompositeComponent');
+  var ReactInstanceHandles = require('./ReactInstanceHandles');
+  var ReactInstanceMap = require('./ReactInstanceMap');
+  var ReactMount = require('./ReactMount');
+  var ReactUpdates = require('./ReactUpdates');
+  var SyntheticEvent = require('./SyntheticEvent');
+  var assign = require('./Object.assign');
+  var emptyObject = require('fbjs/lib/emptyObject');
+  var findDOMNode = require('./findDOMNode');
+  var invariant = require('fbjs/lib/invariant');
   var topLevelTypes = EventConstants.topLevelTypes;
   function Event(suffix) {}
   function findAllInRenderedTreeInternal(inst, test) {
@@ -279,4 +279,4 @@
     ReactTestUtils.SimulateNative[convenienceName] = makeNativeSimulator(eventType);
   });
   module.exports = ReactTestUtils;
-})(require("process"));
+})(require('process'));

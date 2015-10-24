@@ -1,11 +1,11 @@
 /* */ 
 (function(process) {
   'use strict';
-  var EventConstants = require("./EventConstants");
-  var EventPluginHub = require("./EventPluginHub");
-  var warning = require("fbjs/lib/warning");
-  var accumulateInto = require("./accumulateInto");
-  var forEachAccumulated = require("./forEachAccumulated");
+  var EventConstants = require('./EventConstants');
+  var EventPluginHub = require('./EventPluginHub');
+  var warning = require('fbjs/lib/warning');
+  var accumulateInto = require('./accumulateInto');
+  var forEachAccumulated = require('./forEachAccumulated');
   var PropagationPhases = EventConstants.PropagationPhases;
   var getListener = EventPluginHub.getListener;
   function listenerAtPhase(id, event, propagationPhase) {
@@ -67,4 +67,4 @@
     accumulateEnterLeaveDispatches: accumulateEnterLeaveDispatches
   };
   module.exports = EventPropagators;
-})(require("process"));
+})(require('process'));

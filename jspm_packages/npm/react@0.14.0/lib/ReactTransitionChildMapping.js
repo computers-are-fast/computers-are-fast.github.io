@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var flattenChildren = require("./flattenChildren");
+var flattenChildren = require('./flattenChildren');
 var ReactTransitionChildMapping = {
   getChildMapping: function(children) {
     if (!children) {

@@ -1,16 +1,16 @@
 /* */ 
-require("mock-modules").autoMockOff();
+require('mock-modules').autoMockOff();
 describe('es6-es7-object-integration-test', function() {
   var transformFn;
   var visitors;
   var x = 123456;
   var z = 345678;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    transformFn = require("../../src/jstransform").transform;
-    var conciseMethodVisitors = require("../es6-object-concise-method-visitors").visitorList;
-    var shortObjectsVisitors = require("../es6-object-short-notation-visitors").visitorList;
-    var spreadPropertyVisitors = require("../es7-spread-property-visitors").visitorList;
+    require('mock-modules').dumpCache();
+    transformFn = require('../../src/jstransform').transform;
+    var conciseMethodVisitors = require('../es6-object-concise-method-visitors').visitorList;
+    var shortObjectsVisitors = require('../es6-object-short-notation-visitors').visitorList;
+    var spreadPropertyVisitors = require('../es7-spread-property-visitors').visitorList;
     visitors = spreadPropertyVisitors.concat(shortObjectsVisitors, conciseMethodVisitors);
   });
   function transform(code) {

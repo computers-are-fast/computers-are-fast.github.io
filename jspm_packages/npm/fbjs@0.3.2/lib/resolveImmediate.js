@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var Promise = require("./Promise");
+var Promise = require('./Promise');
 var resolvedPromise = Promise.resolve();
 function resolveImmediate(callback) {
   resolvedPromise.then(callback)['catch'](throwNext);

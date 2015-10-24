@@ -6,10 +6,10 @@ describe('es6-classes', function() {
   var arrowFunctionVisitors;
   var visitors;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    transformFn = require("../../src/jstransform").transform;
-    classVisitors = require("../es6-class-visitors").visitorList;
-    arrowFunctionVisitors = require("../es6-arrow-function-visitors").visitorList;
+    require('mock-modules').dumpCache();
+    transformFn = require('../../src/jstransform').transform;
+    classVisitors = require('../es6-class-visitors').visitorList;
+    arrowFunctionVisitors = require('../es6-arrow-function-visitors').visitorList;
     visitors = classVisitors.concat(arrowFunctionVisitors);
   });
   function transform(code, opts) {

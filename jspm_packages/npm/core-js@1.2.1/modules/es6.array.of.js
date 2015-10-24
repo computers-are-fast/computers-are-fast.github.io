@@ -1,7 +1,7 @@
 /* */ 
 'use strict';
-var $def = require("./$.def");
-$def($def.S + $def.F * require("./$.fails")(function() {
+var $def = require('./$.def');
+$def($def.S + $def.F * require('./$.fails')(function() {
   function F() {}
   return !(Array.of.call(F) instanceof F);
 }), 'Array', {of: function of() {

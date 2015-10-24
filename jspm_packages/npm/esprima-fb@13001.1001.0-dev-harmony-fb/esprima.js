@@ -6188,4 +6188,4 @@
       return types;
     }());
   }));
-})(require("process"));
+})(require('process'));

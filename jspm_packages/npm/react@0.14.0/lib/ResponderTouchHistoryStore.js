@@ -1,8 +1,8 @@
 /* */ 
 (function(process) {
   'use strict';
-  var EventPluginUtils = require("./EventPluginUtils");
-  var invariant = require("fbjs/lib/invariant");
+  var EventPluginUtils = require('./EventPluginUtils');
+  var invariant = require('fbjs/lib/invariant');
   var isMoveish = EventPluginUtils.isMoveish;
   var isStartish = EventPluginUtils.isStartish;
   var isEndish = EventPluginUtils.isEndish;
@@ -128,4 +128,4 @@
     touchHistory: touchHistory
   };
   module.exports = ResponderTouchHistoryStore;
-})(require("process"));
+})(require('process'));

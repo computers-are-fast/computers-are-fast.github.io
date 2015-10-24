@@ -1,7 +1,7 @@
 /* */ 
-var $ = require("./$"),
-    has = require("./$.has"),
-    toIObject = require("./$.to-iobject");
+var $ = require('./$'),
+    has = require('./$.has'),
+    toIObject = require('./$.to-iobject');
 module.exports = function(isEntries) {
   return function(it) {
     var O = toIObject(it),

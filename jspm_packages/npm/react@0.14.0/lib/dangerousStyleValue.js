@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var CSSProperty = require("./CSSProperty");
+var CSSProperty = require('./CSSProperty');
 var isUnitlessNumber = CSSProperty.isUnitlessNumber;
 function dangerousStyleValue(name, value) {
   var isEmpty = value == null || typeof value === 'boolean' || value === '';

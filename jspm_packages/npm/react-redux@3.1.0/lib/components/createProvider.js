@@ -23,7 +23,7 @@ function _inherits(subClass, superClass) {
   if (superClass)
     Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 }
-var _utilsCreateStoreShape = require("../utils/createStoreShape");
+var _utilsCreateStoreShape = require('../utils/createStoreShape');
 var _utilsCreateStoreShape2 = _interopRequireDefault(_utilsCreateStoreShape);
 function isUsingOwnerContext(React) {
   var version = React.version;

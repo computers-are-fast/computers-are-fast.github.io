@@ -1,12 +1,12 @@
 /* */ 
-require("mock-modules").autoMockOff();
+require('mock-modules').autoMockOff();
 describe('ES6 Template Visitor', function() {
   var transformFn;
   var visitors;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    visitors = require("../es6-template-visitors").visitorList;
-    transformFn = require("../../src/jstransform").transform;
+    require('mock-modules').dumpCache();
+    visitors = require('../es6-template-visitors').visitorList;
+    transformFn = require('../../src/jstransform').transform;
   });
   function transform(code) {
     return transformFn(visitors, code).code;

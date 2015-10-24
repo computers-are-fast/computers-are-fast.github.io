@@ -1,10 +1,10 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ExecutionEnvironment = require("./ExecutionEnvironment");
-  var createArrayFromMixed = require("./createArrayFromMixed");
-  var getMarkupWrap = require("./getMarkupWrap");
-  var invariant = require("./invariant");
+  var ExecutionEnvironment = require('./ExecutionEnvironment');
+  var createArrayFromMixed = require('./createArrayFromMixed');
+  var getMarkupWrap = require('./getMarkupWrap');
+  var invariant = require('./invariant');
   var dummyNode = ExecutionEnvironment.canUseDOM ? document.createElement('div') : null;
   var nodeNamePattern = /^\s*<(\w+)/;
   function getNodeName(markup) {
@@ -37,4 +37,4 @@
     return nodes;
   }
   module.exports = createNodesFromMarkup;
-})(require("process"));
+})(require('process'));

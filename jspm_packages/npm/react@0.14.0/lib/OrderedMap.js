@@ -1,8 +1,8 @@
 /* */ 
 (function(process) {
   'use strict';
-  var assign = require("./Object.assign");
-  var invariant = require("fbjs/lib/invariant");
+  var assign = require('./Object.assign');
+  var invariant = require('fbjs/lib/invariant');
   var PREFIX = 'key:';
   function extractObjectFromArray(arr, keyExtractor) {
     var normalizedObj = {};
@@ -210,4 +210,4 @@
     }
   };
   module.exports = OrderedMap;
-})(require("process"));
+})(require('process'));

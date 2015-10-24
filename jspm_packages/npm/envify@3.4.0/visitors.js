@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
-  var Syntax = require("jstransform").Syntax;
-  var utils = require("jstransform/src/utils");
+  var Syntax = require('jstransform').Syntax;
+  var utils = require('jstransform/src/utils');
   function create(envs) {
     var args = [].concat(envs[0]._ || []).concat(envs[1]._ || []);
     var purge = args.indexOf('purge') !== -1;
@@ -30,4 +30,4 @@
     return [visitProcessEnv];
   }
   module.exports = create;
-})(require("process"));
+})(require('process'));

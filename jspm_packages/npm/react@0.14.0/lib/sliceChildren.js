@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var ReactChildren = require("./ReactChildren");
+var ReactChildren = require('./ReactChildren');
 function sliceChildren(children, start, end) {
   if (children == null) {
     return children;

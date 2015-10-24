@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var SyntheticMouseEvent = require("./SyntheticMouseEvent");
+var SyntheticMouseEvent = require('./SyntheticMouseEvent');
 var WheelEventInterface = {
   deltaX: function(event) {
     return 'deltaX' in event ? event.deltaX : 'wheelDeltaX' in event ? -event.wheelDeltaX : 0;

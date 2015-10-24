@@ -1,13 +1,13 @@
 /* */ 
 (function(process) {
   'use strict';
-  var EventPluginRegistry = require("./EventPluginRegistry");
-  var EventPluginUtils = require("./EventPluginUtils");
-  var ReactErrorUtils = require("./ReactErrorUtils");
-  var accumulateInto = require("./accumulateInto");
-  var forEachAccumulated = require("./forEachAccumulated");
-  var invariant = require("fbjs/lib/invariant");
-  var warning = require("fbjs/lib/warning");
+  var EventPluginRegistry = require('./EventPluginRegistry');
+  var EventPluginUtils = require('./EventPluginUtils');
+  var ReactErrorUtils = require('./ReactErrorUtils');
+  var accumulateInto = require('./accumulateInto');
+  var forEachAccumulated = require('./forEachAccumulated');
+  var invariant = require('fbjs/lib/invariant');
+  var warning = require('fbjs/lib/warning');
   var listenerBank = {};
   var eventQueue = null;
   var executeDispatchesAndRelease = function(event, simulated) {
@@ -122,4 +122,4 @@
     }
   };
   module.exports = EventPluginHub;
-})(require("process"));
+})(require('process'));

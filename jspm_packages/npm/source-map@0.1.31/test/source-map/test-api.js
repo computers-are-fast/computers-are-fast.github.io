@@ -1,12 +1,12 @@
 /* */ 
 "format cjs";
 if (typeof define !== 'function') {
-  var define = require("amdefine")(module, require);
+  var define = require('amdefine')(module, require);
 }
 define(function(require, exports, module) {
   var sourceMap;
   try {
-    sourceMap = require("../../lib/source-map");
+    sourceMap = require('../../lib/source-map');
   } catch (e) {
     sourceMap = {};
     Components.utils.import('resource:///modules/devtools/SourceMap.jsm', sourceMap);

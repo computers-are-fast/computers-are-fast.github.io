@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var Promise = require("./core");
+var Promise = require('./core');
 module.exports = Promise;
 Promise.denodeify = function(fn, argumentCount) {
   argumentCount = argumentCount || Infinity;

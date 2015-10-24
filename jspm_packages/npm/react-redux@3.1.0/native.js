@@ -1,2 +1,2 @@
 /* */ 
-module.exports = require("./lib/native");
+module.exports = require('./lib/native');

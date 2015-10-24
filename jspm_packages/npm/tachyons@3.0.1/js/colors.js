@@ -1,10 +1,10 @@
 /* */ 
-var _ = require("lodash");
-var fs = require("fs");
-var postcss = require("postcss");
-var cssstats = require("cssstats");
-var parseColors = require("./lib/parse-colors");
-var parseCombos = require("./lib/parse-combos");
+var _ = require('lodash');
+var fs = require('fs');
+var postcss = require('postcss');
+var cssstats = require('cssstats');
+var parseColors = require('./lib/parse-colors');
+var parseCombos = require('./lib/parse-combos');
 var css = fs.readFileSync('./css/tachyons.min.css', 'utf8');
 var colors = parseColors(css);
 var combos = parseCombos(colors);

@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
   'use strict';
-  var invariant = require("fbjs/lib/invariant");
+  var invariant = require('fbjs/lib/invariant');
   var EventPluginOrder = null;
   var namesToPlugins = {};
   function recomputePluginOrdering() {
@@ -112,4 +112,4 @@
     }
   };
   module.exports = EventPluginRegistry;
-})(require("process"));
+})(require('process'));

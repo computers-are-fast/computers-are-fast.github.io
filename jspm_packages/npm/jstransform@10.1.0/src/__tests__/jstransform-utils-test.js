@@ -1,13 +1,13 @@
 /* */ 
-require("mock-modules").autoMockOff();
+require('mock-modules').autoMockOff();
 describe('jstransform-utils', function() {
   var transform,
       utils;
-  var Syntax = require("esprima-fb").Syntax;
+  var Syntax = require('esprima-fb').Syntax;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    transform = require("../jstransform").transform;
-    utils = require("../utils");
+    require('mock-modules').dumpCache();
+    transform = require('../jstransform').transform;
+    utils = require('../utils');
   });
   describe('temporary variables', function() {
     it('should inject temporary variables at the start of functions', function() {

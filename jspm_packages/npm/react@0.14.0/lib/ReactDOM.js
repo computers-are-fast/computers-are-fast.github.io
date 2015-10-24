@@ -1,18 +1,18 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactCurrentOwner = require("./ReactCurrentOwner");
-  var ReactDOMTextComponent = require("./ReactDOMTextComponent");
-  var ReactDefaultInjection = require("./ReactDefaultInjection");
-  var ReactInstanceHandles = require("./ReactInstanceHandles");
-  var ReactMount = require("./ReactMount");
-  var ReactPerf = require("./ReactPerf");
-  var ReactReconciler = require("./ReactReconciler");
-  var ReactUpdates = require("./ReactUpdates");
-  var ReactVersion = require("./ReactVersion");
-  var findDOMNode = require("./findDOMNode");
-  var renderSubtreeIntoContainer = require("./renderSubtreeIntoContainer");
-  var warning = require("fbjs/lib/warning");
+  var ReactCurrentOwner = require('./ReactCurrentOwner');
+  var ReactDOMTextComponent = require('./ReactDOMTextComponent');
+  var ReactDefaultInjection = require('./ReactDefaultInjection');
+  var ReactInstanceHandles = require('./ReactInstanceHandles');
+  var ReactMount = require('./ReactMount');
+  var ReactPerf = require('./ReactPerf');
+  var ReactReconciler = require('./ReactReconciler');
+  var ReactUpdates = require('./ReactUpdates');
+  var ReactVersion = require('./ReactVersion');
+  var findDOMNode = require('./findDOMNode');
+  var renderSubtreeIntoContainer = require('./renderSubtreeIntoContainer');
+  var warning = require('fbjs/lib/warning');
   ReactDefaultInjection.inject();
   var render = ReactPerf.measure('React', 'render', ReactMount.render);
   var React = {
@@ -33,7 +33,7 @@
     });
   }
   if (process.env.NODE_ENV !== 'production') {
-    var ExecutionEnvironment = require("fbjs/lib/ExecutionEnvironment");
+    var ExecutionEnvironment = require('fbjs/lib/ExecutionEnvironment');
     if (ExecutionEnvironment.canUseDOM && window.top === window.self) {
       if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined') {
         if (navigator.userAgent.indexOf('Chrome') > -1 && navigator.userAgent.indexOf('Edge') === -1 || navigator.userAgent.indexOf('Firefox') > -1) {
@@ -52,4 +52,4 @@
     }
   }
   module.exports = React;
-})(require("process"));
+})(require('process'));

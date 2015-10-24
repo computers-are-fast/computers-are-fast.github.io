@@ -1,10 +1,10 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactInstanceMap = require("./ReactInstanceMap");
-  var ReactTestUtils = require("./ReactTestUtils");
-  var assign = require("./Object.assign");
-  var invariant = require("fbjs/lib/invariant");
+  var ReactInstanceMap = require('./ReactInstanceMap');
+  var ReactTestUtils = require('./ReactTestUtils');
+  var assign = require('./Object.assign');
+  var invariant = require('fbjs/lib/invariant');
   function reactComponentExpect(instance) {
     if (instance instanceof reactComponentExpectInternal) {
       return instance;
@@ -128,4 +128,4 @@
     }
   });
   module.exports = reactComponentExpect;
-})(require("process"));
+})(require('process'));

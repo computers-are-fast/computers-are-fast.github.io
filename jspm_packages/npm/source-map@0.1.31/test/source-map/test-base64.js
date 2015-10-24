@@ -1,10 +1,10 @@
 /* */ 
 "format cjs";
 if (typeof define !== 'function') {
-  var define = require("amdefine")(module, require);
+  var define = require('amdefine')(module, require);
 }
 define(function(require, exports, module) {
-  var base64 = require("../../lib/source-map/base64");
+  var base64 = require('../../lib/source-map/base64');
   exports['test out of range encoding'] = function(assert, util) {
     assert.throws(function() {
       base64.encode(-1);

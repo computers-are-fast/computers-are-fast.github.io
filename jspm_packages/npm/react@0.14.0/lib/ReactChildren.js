@@ -1,9 +1,9 @@
 /* */ 
 'use strict';
-var PooledClass = require("./PooledClass");
-var ReactElement = require("./ReactElement");
-var emptyFunction = require("fbjs/lib/emptyFunction");
-var traverseAllChildren = require("./traverseAllChildren");
+var PooledClass = require('./PooledClass');
+var ReactElement = require('./ReactElement');
+var emptyFunction = require('fbjs/lib/emptyFunction');
+var traverseAllChildren = require('./traverseAllChildren');
 var twoArgumentPooler = PooledClass.twoArgumentPooler;
 var fourArgumentPooler = PooledClass.fourArgumentPooler;
 var userProvidedKeyEscapeRegex = /\/(?!\/)/g;

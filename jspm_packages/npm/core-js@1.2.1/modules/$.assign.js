@@ -1,9 +1,9 @@
 /* */ 
-var toObject = require("./$.to-object"),
-    IObject = require("./$.iobject"),
-    enumKeys = require("./$.enum-keys"),
-    has = require("./$.has");
-module.exports = require("./$.fails")(function() {
+var toObject = require('./$.to-object'),
+    IObject = require('./$.iobject'),
+    enumKeys = require('./$.enum-keys'),
+    has = require('./$.has');
+module.exports = require('./$.fails')(function() {
   var a = Object.assign,
       A = {},
       B = {},

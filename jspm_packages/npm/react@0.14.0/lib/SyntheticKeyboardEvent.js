@@ -1,9 +1,9 @@
 /* */ 
 'use strict';
-var SyntheticUIEvent = require("./SyntheticUIEvent");
-var getEventCharCode = require("./getEventCharCode");
-var getEventKey = require("./getEventKey");
-var getEventModifierState = require("./getEventModifierState");
+var SyntheticUIEvent = require('./SyntheticUIEvent');
+var getEventCharCode = require('./getEventCharCode');
+var getEventKey = require('./getEventKey');
+var getEventModifierState = require('./getEventModifierState');
 var KeyboardEventInterface = {
   key: getEventKey,
   location: null,

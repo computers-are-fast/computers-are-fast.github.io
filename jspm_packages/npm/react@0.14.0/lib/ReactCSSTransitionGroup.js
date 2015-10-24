@@ -1,9 +1,9 @@
 /* */ 
 'use strict';
-var React = require("./React");
-var assign = require("./Object.assign");
-var ReactTransitionGroup = require("./ReactTransitionGroup");
-var ReactCSSTransitionGroupChild = require("./ReactCSSTransitionGroupChild");
+var React = require('./React');
+var assign = require('./Object.assign');
+var ReactTransitionGroup = require('./ReactTransitionGroup');
+var ReactCSSTransitionGroupChild = require('./ReactCSSTransitionGroupChild');
 function createTransitionTimeoutPropValidator(transitionType) {
   var timeoutPropName = 'transition' + transitionType + 'Timeout';
   var enabledPropName = 'transition' + transitionType;

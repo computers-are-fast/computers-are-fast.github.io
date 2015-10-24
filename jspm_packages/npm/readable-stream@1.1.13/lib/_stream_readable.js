@@ -1,17 +1,17 @@
 /* */ 
 (function(Buffer, process) {
   module.exports = Readable;
-  var isArray = require("isarray");
-  var Buffer = require("buffer").Buffer;
+  var isArray = require('isarray');
+  var Buffer = require('buffer').Buffer;
   Readable.ReadableState = ReadableState;
-  var EE = require("events").EventEmitter;
+  var EE = require('events').EventEmitter;
   if (!EE.listenerCount)
     EE.listenerCount = function(emitter, type) {
       return emitter.listeners(type).length;
     };
   var Stream = require('stream-browserify/index');
-  var util = require("core-util-is");
-  util.inherits = require("inherits");
+  var util = require('core-util-is');
+  util.inherits = require('inherits');
   var StringDecoder;
   var debug = require('@empty');
   if (debug && debug.debuglog) {
@@ -21,7 +21,7 @@
   }
   util.inherits(Readable, Stream);
   function ReadableState(options, stream) {
-    var Duplex = require("./_stream_duplex");
+    var Duplex = require('./_stream_duplex');
     options = options || {};
     var hwm = options.highWaterMark;
     var defaultHwm = options.objectMode ? 16 : 16 * 1024;
@@ -50,13 +50,13 @@
     this.encoding = null;
     if (options.encoding) {
       if (!StringDecoder)
-        StringDecoder = require("string_decoder").StringDecoder;
+        StringDecoder = require('string_decoder').StringDecoder;
       this.decoder = new StringDecoder(options.encoding);
       this.encoding = options.encoding;
     }
   }
   function Readable(options) {
-    var Duplex = require("./_stream_duplex");
+    var Duplex = require('./_stream_duplex');
     if (!(this instanceof Readable))
       return new Readable(options);
     this._readableState = new ReadableState(options, this);
@@ -122,7 +122,7 @@
   }
   Readable.prototype.setEncoding = function(enc) {
     if (!StringDecoder)
-      StringDecoder = require("string_decoder").StringDecoder;
+      StringDecoder = require('string_decoder').StringDecoder;
     this._readableState.decoder = new StringDecoder(enc);
     this._readableState.encoding = enc;
     return this;
@@ -620,4 +620,4 @@
     }
     return -1;
   }
-})(require("buffer").Buffer, require("process"));
+})(require('buffer').Buffer, require('process'));

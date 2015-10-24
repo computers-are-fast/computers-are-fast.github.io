@@ -2,7 +2,7 @@
 (function(process) {
   (function() {
     'use strict';
-    var child = require("child_process"),
+    var child = require('child_process'),
         nodejs = '"' + process.execPath + '"',
         ret = 0,
         suites,
@@ -31,4 +31,4 @@
     index = 0;
     nextTest();
   }());
-})(require("process"));
+})(require('process'));

@@ -1,9 +1,9 @@
 /* */ 
 'use strict';
-var ReactElement = require("./ReactElement");
-var ReactEmptyComponentRegistry = require("./ReactEmptyComponentRegistry");
-var ReactReconciler = require("./ReactReconciler");
-var assign = require("./Object.assign");
+var ReactElement = require('./ReactElement');
+var ReactEmptyComponentRegistry = require('./ReactEmptyComponentRegistry');
+var ReactReconciler = require('./ReactReconciler');
+var assign = require('./Object.assign');
 var placeholderElement;
 var ReactEmptyComponentInjection = {injectEmptyComponent: function(component) {
     placeholderElement = ReactElement.createElement(component);

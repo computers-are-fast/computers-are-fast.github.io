@@ -1,11 +1,11 @@
 /* */ 
-require("mock-modules").autoMockOff();
+require('mock-modules').autoMockOff();
 describe('jstransform', function() {
   var transformFn;
-  var Syntax = require("esprima-fb").Syntax;
+  var Syntax = require('esprima-fb').Syntax;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    transformFn = require("../jstransform").transform;
+    require('mock-modules').dumpCache();
+    transformFn = require('../jstransform').transform;
   });
   function _runVisitor(source, nodeCount, visitor) {
     var actualVisitationCount = 0;

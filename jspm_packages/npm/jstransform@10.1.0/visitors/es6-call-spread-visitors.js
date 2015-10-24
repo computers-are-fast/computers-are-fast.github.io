@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
-  var Syntax = require("esprima-fb").Syntax;
-  var utils = require("../src/utils");
+  var Syntax = require('esprima-fb').Syntax;
+  var utils = require('../src/utils');
   function process(traverse, node, path, state) {
     utils.move(node.range[0], state);
     traverse(node, path, state);
@@ -69,4 +69,4 @@
     return ((node.type === Syntax.CallExpression || node.type === Syntax.NewExpression) && node.arguments.length > 0 && node.arguments[node.arguments.length - 1].type === Syntax.SpreadElement);
   };
   exports.visitorList = [visitCallSpread];
-})(require("process"));
+})(require('process'));

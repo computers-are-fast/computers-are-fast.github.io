@@ -1,8 +1,8 @@
 /* */ 
 'use strict';
-var toObject = require("./$.to-object"),
-    toIndex = require("./$.to-index"),
-    toLength = require("./$.to-length");
+var toObject = require('./$.to-object'),
+    toIndex = require('./$.to-index'),
+    toLength = require('./$.to-length');
 module.exports = [].fill || function fill(value) {
   var O = toObject(this, true),
       length = toLength(O.length),

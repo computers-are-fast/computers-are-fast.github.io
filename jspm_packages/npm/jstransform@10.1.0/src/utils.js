@@ -1,6 +1,6 @@
 /* */ 
 (function(Buffer, process) {
-  var Syntax = require("esprima-fb").Syntax;
+  var Syntax = require('esprima-fb').Syntax;
   var leadingIndentRegexp = /(^|\n)( {2}|\t)/g;
   var nonWhiteRegexp = /(\S)/g;
   function createState(source, rootNode, transformOptions) {
@@ -221,7 +221,7 @@
   }
   function getDocblock(state) {
     if (!state.g.docblock) {
-      var docblock = require("./docblock");
+      var docblock = require('./docblock');
       state.g.docblock = docblock.parseAsObject(docblock.extract(state.g.source));
     }
     return state.g.docblock;
@@ -383,4 +383,4 @@
   exports.scopeTypes = scopeTypes;
   exports.updateIndent = updateIndent;
   exports.updateState = updateState;
-})(require("buffer").Buffer, require("process"));
+})(require('buffer').Buffer, require('process'));

@@ -1,12 +1,12 @@
 /* */ 
 'use strict';
-var CallbackQueue = require("./CallbackQueue");
-var PooledClass = require("./PooledClass");
-var ReactBrowserEventEmitter = require("./ReactBrowserEventEmitter");
-var ReactDOMFeatureFlags = require("./ReactDOMFeatureFlags");
-var ReactInputSelection = require("./ReactInputSelection");
-var Transaction = require("./Transaction");
-var assign = require("./Object.assign");
+var CallbackQueue = require('./CallbackQueue');
+var PooledClass = require('./PooledClass');
+var ReactBrowserEventEmitter = require('./ReactBrowserEventEmitter');
+var ReactDOMFeatureFlags = require('./ReactDOMFeatureFlags');
+var ReactInputSelection = require('./ReactInputSelection');
+var Transaction = require('./Transaction');
+var assign = require('./Object.assign');
 var SELECTION_RESTORATION = {
   initialize: ReactInputSelection.getSelectionInformation,
   close: ReactInputSelection.restoreSelection

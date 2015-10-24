@@ -1,23 +1,23 @@
 /* */ 
 (function(process) {
   'use strict';
-  var EventConstants = require("./EventConstants");
-  var EventListener = require("fbjs/lib/EventListener");
-  var EventPropagators = require("./EventPropagators");
-  var ReactMount = require("./ReactMount");
-  var SyntheticClipboardEvent = require("./SyntheticClipboardEvent");
-  var SyntheticEvent = require("./SyntheticEvent");
-  var SyntheticFocusEvent = require("./SyntheticFocusEvent");
-  var SyntheticKeyboardEvent = require("./SyntheticKeyboardEvent");
-  var SyntheticMouseEvent = require("./SyntheticMouseEvent");
-  var SyntheticDragEvent = require("./SyntheticDragEvent");
-  var SyntheticTouchEvent = require("./SyntheticTouchEvent");
-  var SyntheticUIEvent = require("./SyntheticUIEvent");
-  var SyntheticWheelEvent = require("./SyntheticWheelEvent");
-  var emptyFunction = require("fbjs/lib/emptyFunction");
-  var getEventCharCode = require("./getEventCharCode");
-  var invariant = require("fbjs/lib/invariant");
-  var keyOf = require("fbjs/lib/keyOf");
+  var EventConstants = require('./EventConstants');
+  var EventListener = require('fbjs/lib/EventListener');
+  var EventPropagators = require('./EventPropagators');
+  var ReactMount = require('./ReactMount');
+  var SyntheticClipboardEvent = require('./SyntheticClipboardEvent');
+  var SyntheticEvent = require('./SyntheticEvent');
+  var SyntheticFocusEvent = require('./SyntheticFocusEvent');
+  var SyntheticKeyboardEvent = require('./SyntheticKeyboardEvent');
+  var SyntheticMouseEvent = require('./SyntheticMouseEvent');
+  var SyntheticDragEvent = require('./SyntheticDragEvent');
+  var SyntheticTouchEvent = require('./SyntheticTouchEvent');
+  var SyntheticUIEvent = require('./SyntheticUIEvent');
+  var SyntheticWheelEvent = require('./SyntheticWheelEvent');
+  var emptyFunction = require('fbjs/lib/emptyFunction');
+  var getEventCharCode = require('./getEventCharCode');
+  var invariant = require('fbjs/lib/invariant');
+  var keyOf = require('fbjs/lib/keyOf');
   var topLevelTypes = EventConstants.topLevelTypes;
   var eventTypes = {
     abort: {phasedRegistrationNames: {
@@ -425,4 +425,4 @@
     }
   };
   module.exports = SimpleEventPlugin;
-})(require("process"));
+})(require('process'));

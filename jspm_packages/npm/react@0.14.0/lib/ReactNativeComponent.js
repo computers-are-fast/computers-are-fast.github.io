@@ -1,8 +1,8 @@
 /* */ 
 (function(process) {
   'use strict';
-  var assign = require("./Object.assign");
-  var invariant = require("fbjs/lib/invariant");
+  var assign = require('./Object.assign');
+  var invariant = require('fbjs/lib/invariant');
   var autoGenerateWrapperClass = null;
   var genericComponentClass = null;
   var tagToComponentClass = {};
@@ -47,4 +47,4 @@
     injection: ReactNativeComponentInjection
   };
   module.exports = ReactNativeComponent;
-})(require("process"));
+})(require('process'));

@@ -1,15 +1,15 @@
 /* */ 
 (function(process) {
   'use strict';
-  var EventConstants = require("./EventConstants");
-  var EventPluginUtils = require("./EventPluginUtils");
-  var EventPropagators = require("./EventPropagators");
-  var ReactInstanceHandles = require("./ReactInstanceHandles");
-  var ResponderSyntheticEvent = require("./ResponderSyntheticEvent");
-  var ResponderTouchHistoryStore = require("./ResponderTouchHistoryStore");
-  var accumulate = require("./accumulate");
-  var invariant = require("fbjs/lib/invariant");
-  var keyOf = require("fbjs/lib/keyOf");
+  var EventConstants = require('./EventConstants');
+  var EventPluginUtils = require('./EventPluginUtils');
+  var EventPropagators = require('./EventPropagators');
+  var ReactInstanceHandles = require('./ReactInstanceHandles');
+  var ResponderSyntheticEvent = require('./ResponderSyntheticEvent');
+  var ResponderTouchHistoryStore = require('./ResponderTouchHistoryStore');
+  var accumulate = require('./accumulate');
+  var invariant = require('fbjs/lib/invariant');
+  var keyOf = require('fbjs/lib/keyOf');
   var isStartish = EventPluginUtils.isStartish;
   var isMoveish = EventPluginUtils.isMoveish;
   var isEndish = EventPluginUtils.isEndish;
@@ -174,4 +174,4 @@
     }
   };
   module.exports = ResponderEventPlugin;
-})(require("process"));
+})(require('process'));

@@ -1,13 +1,13 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactCurrentOwner = require("./ReactCurrentOwner");
-  var ReactElement = require("./ReactElement");
-  var ReactInstanceMap = require("./ReactInstanceMap");
-  var ReactUpdates = require("./ReactUpdates");
-  var assign = require("./Object.assign");
-  var invariant = require("fbjs/lib/invariant");
-  var warning = require("fbjs/lib/warning");
+  var ReactCurrentOwner = require('./ReactCurrentOwner');
+  var ReactElement = require('./ReactElement');
+  var ReactInstanceMap = require('./ReactInstanceMap');
+  var ReactUpdates = require('./ReactUpdates');
+  var assign = require('./Object.assign');
+  var invariant = require('fbjs/lib/invariant');
+  var warning = require('fbjs/lib/warning');
   function enqueueUpdate(internalInstance) {
     ReactUpdates.enqueueUpdate(internalInstance);
   }
@@ -125,4 +125,4 @@
     }
   };
   module.exports = ReactUpdateQueue;
-})(require("process"));
+})(require('process'));

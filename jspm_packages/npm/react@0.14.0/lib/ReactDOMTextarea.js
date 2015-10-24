@@ -1,12 +1,12 @@
 /* */ 
 (function(process) {
   'use strict';
-  var LinkedValueUtils = require("./LinkedValueUtils");
-  var ReactDOMIDOperations = require("./ReactDOMIDOperations");
-  var ReactUpdates = require("./ReactUpdates");
-  var assign = require("./Object.assign");
-  var invariant = require("fbjs/lib/invariant");
-  var warning = require("fbjs/lib/warning");
+  var LinkedValueUtils = require('./LinkedValueUtils');
+  var ReactDOMIDOperations = require('./ReactDOMIDOperations');
+  var ReactUpdates = require('./ReactUpdates');
+  var assign = require('./Object.assign');
+  var invariant = require('fbjs/lib/invariant');
+  var warning = require('fbjs/lib/warning');
   function forceUpdateIfMounted() {
     if (this._rootNodeID) {
       ReactDOMTextarea.updateWrapper(this);
@@ -64,4 +64,4 @@
     return returnValue;
   }
   module.exports = ReactDOMTextarea;
-})(require("process"));
+})(require('process'));

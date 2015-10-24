@@ -1,9 +1,9 @@
 /* */ 
 (function(process) {
   'use strict';
-  var jsTokens = require("js-tokens");
-  var stream = require("stream");
-  var util = require("util");
+  var jsTokens = require('js-tokens');
+  var stream = require('stream');
+  var util = require('util');
   var jsonExtRe = /\.json$/;
   var processEnvRe = /\bprocess\.env\.[_$a-zA-Z][$\w]+\b/;
   var spaceOrCommentRe = /^(?:\s|\/[/*])/;
@@ -76,4 +76,4 @@
       return 'undefined';
     }
   }
-})(require("process"));
+})(require('process'));

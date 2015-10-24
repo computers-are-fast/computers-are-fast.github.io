@@ -1,15 +1,15 @@
 /* */ 
 (function(process) {
   'use strict';
-  var EventListener = require("fbjs/lib/EventListener");
-  var ExecutionEnvironment = require("fbjs/lib/ExecutionEnvironment");
-  var PooledClass = require("./PooledClass");
-  var ReactInstanceHandles = require("./ReactInstanceHandles");
-  var ReactMount = require("./ReactMount");
-  var ReactUpdates = require("./ReactUpdates");
-  var assign = require("./Object.assign");
-  var getEventTarget = require("./getEventTarget");
-  var getUnboundedScrollPosition = require("fbjs/lib/getUnboundedScrollPosition");
+  var EventListener = require('fbjs/lib/EventListener');
+  var ExecutionEnvironment = require('fbjs/lib/ExecutionEnvironment');
+  var PooledClass = require('./PooledClass');
+  var ReactInstanceHandles = require('./ReactInstanceHandles');
+  var ReactMount = require('./ReactMount');
+  var ReactUpdates = require('./ReactUpdates');
+  var assign = require('./Object.assign');
+  var getEventTarget = require('./getEventTarget');
+  var getUnboundedScrollPosition = require('fbjs/lib/getUnboundedScrollPosition');
   var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
   function findParent(node) {
     var nodeID = ReactMount.getID(node);
@@ -122,4 +122,4 @@
     }
   };
   module.exports = ReactEventListener;
-})(require("process"));
+})(require('process'));

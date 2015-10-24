@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var DOMProperty = require("./DOMProperty");
+var DOMProperty = require('./DOMProperty');
 var MUST_USE_ATTRIBUTE = DOMProperty.injection.MUST_USE_ATTRIBUTE;
 var NS = {
   xlink: 'http://www.w3.org/1999/xlink',

@@ -1,10 +1,10 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactElement = require("./ReactElement");
-  var ReactPropTransferer = require("./ReactPropTransferer");
-  var keyOf = require("fbjs/lib/keyOf");
-  var warning = require("fbjs/lib/warning");
+  var ReactElement = require('./ReactElement');
+  var ReactPropTransferer = require('./ReactPropTransferer');
+  var keyOf = require('fbjs/lib/keyOf');
+  var warning = require('fbjs/lib/warning');
   var CHILDREN_PROP = keyOf({children: null});
   var didDeprecatedWarn = false;
   function cloneWithProps(child, props) {
@@ -20,4 +20,4 @@
     return ReactElement.createElement(child.type, newProps);
   }
   module.exports = cloneWithProps;
-})(require("process"));
+})(require('process'));

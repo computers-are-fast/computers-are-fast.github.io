@@ -1,14 +1,14 @@
 /* */ 
 (function(process) {
   'use strict';
-  var DOMChildrenOperations = require("./DOMChildrenOperations");
-  var DOMPropertyOperations = require("./DOMPropertyOperations");
-  var ReactComponentBrowserEnvironment = require("./ReactComponentBrowserEnvironment");
-  var ReactMount = require("./ReactMount");
-  var assign = require("./Object.assign");
-  var escapeTextContentForBrowser = require("./escapeTextContentForBrowser");
-  var setTextContent = require("./setTextContent");
-  var validateDOMNesting = require("./validateDOMNesting");
+  var DOMChildrenOperations = require('./DOMChildrenOperations');
+  var DOMPropertyOperations = require('./DOMPropertyOperations');
+  var ReactComponentBrowserEnvironment = require('./ReactComponentBrowserEnvironment');
+  var ReactMount = require('./ReactMount');
+  var assign = require('./Object.assign');
+  var escapeTextContentForBrowser = require('./escapeTextContentForBrowser');
+  var setTextContent = require('./setTextContent');
+  var validateDOMNesting = require('./validateDOMNesting');
   var ReactDOMTextComponent = function(props) {};
   assign(ReactDOMTextComponent.prototype, {
     construct: function(text) {
@@ -55,4 +55,4 @@
     }
   });
   module.exports = ReactDOMTextComponent;
-})(require("process"));
+})(require('process'));

@@ -1,9 +1,9 @@
 /* */ 
 'use strict';
-var React = require("./React");
-var ReactTransitionChildMapping = require("./ReactTransitionChildMapping");
-var assign = require("./Object.assign");
-var emptyFunction = require("fbjs/lib/emptyFunction");
+var React = require('./React');
+var ReactTransitionChildMapping = require('./ReactTransitionChildMapping');
+var assign = require('./Object.assign');
+var emptyFunction = require('fbjs/lib/emptyFunction');
 var ReactTransitionGroup = React.createClass({
   displayName: 'ReactTransitionGroup',
   propTypes: {

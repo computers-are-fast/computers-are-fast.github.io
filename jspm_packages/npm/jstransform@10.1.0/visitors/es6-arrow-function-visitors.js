@@ -1,8 +1,8 @@
 /* */ 
-var restParamVisitors = require("./es6-rest-param-visitors");
-var destructuringVisitors = require("./es6-destructuring-visitors");
-var Syntax = require("esprima-fb").Syntax;
-var utils = require("../src/utils");
+var restParamVisitors = require('./es6-rest-param-visitors');
+var destructuringVisitors = require('./es6-destructuring-visitors');
+var Syntax = require('esprima-fb').Syntax;
+var utils = require('../src/utils');
 function visitArrowFunction(traverse, node, path, state) {
   var notInExpression = (path[0].type === Syntax.ExpressionStatement);
   if (notInExpression) {

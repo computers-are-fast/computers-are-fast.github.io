@@ -1,7 +1,7 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ExecutionEnvironment = require("fbjs/lib/ExecutionEnvironment");
+  var ExecutionEnvironment = require('fbjs/lib/ExecutionEnvironment');
   var WHITESPACE_TEST = /^[ \r\n\t\f]/;
   var NONVISIBLE_TEST = /<(!--|link|noscript|meta|script|style)[ \r\n\t\f\/>]/;
   var setInnerHTML = function(node, html) {
@@ -37,4 +37,4 @@
     }
   }
   module.exports = setInnerHTML;
-})(require("process"));
+})(require('process'));

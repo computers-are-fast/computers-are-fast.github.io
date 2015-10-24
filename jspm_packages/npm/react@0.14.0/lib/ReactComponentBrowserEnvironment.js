@@ -1,8 +1,8 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ReactDOMIDOperations = require("./ReactDOMIDOperations");
-  var ReactMount = require("./ReactMount");
+  var ReactDOMIDOperations = require('./ReactDOMIDOperations');
+  var ReactMount = require('./ReactMount');
   var ReactComponentBrowserEnvironment = {
     processChildrenUpdates: ReactDOMIDOperations.dangerouslyProcessChildrenUpdates,
     replaceNodeWithMarkupByID: ReactDOMIDOperations.dangerouslyReplaceNodeWithMarkupByID,
@@ -11,4 +11,4 @@
     }
   };
   module.exports = ReactComponentBrowserEnvironment;
-})(require("process"));
+})(require('process'));

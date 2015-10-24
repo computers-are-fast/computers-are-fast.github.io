@@ -8,12 +8,12 @@
       count;
   if (typeof esprima === 'undefined') {
     if (typeof phantom === 'object') {
-      fs = require("fs");
-      system = require("system");
-      esprima = require("./esprima");
+      fs = require('fs');
+      system = require('system');
+      esprima = require('./esprima');
     } else if (typeof require === 'function') {
-      fs = require("fs");
-      esprima = require("esprima");
+      fs = require('fs');
+      esprima = require('esprima');
     } else if (typeof load === 'function') {
       try {
         load('esprima.js');
@@ -142,4 +142,4 @@
   if (count === 0 && typeof phantom === 'object') {
     process.exit(0);
   }
-})(require("process"));
+})(require('process'));

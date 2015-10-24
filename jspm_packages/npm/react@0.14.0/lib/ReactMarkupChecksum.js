@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var adler32 = require("./adler32");
+var adler32 = require('./adler32');
 var TAG_END = /\/?>/;
 var ReactMarkupChecksum = {
   CHECKSUM_ATTR_NAME: 'data-react-checksum',

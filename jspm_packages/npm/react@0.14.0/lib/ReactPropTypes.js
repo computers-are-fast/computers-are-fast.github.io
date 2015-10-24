@@ -1,9 +1,9 @@
 /* */ 
 'use strict';
-var ReactElement = require("./ReactElement");
-var ReactPropTypeLocationNames = require("./ReactPropTypeLocationNames");
-var emptyFunction = require("fbjs/lib/emptyFunction");
-var getIteratorFn = require("./getIteratorFn");
+var ReactElement = require('./ReactElement');
+var ReactPropTypeLocationNames = require('./ReactPropTypeLocationNames');
+var emptyFunction = require('fbjs/lib/emptyFunction');
+var getIteratorFn = require('./getIteratorFn');
 var ANONYMOUS = '<<anonymous>>';
 var ReactPropTypes = {
   array: createPrimitiveTypeChecker('array'),

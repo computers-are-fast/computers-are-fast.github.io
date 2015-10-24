@@ -1,9 +1,9 @@
 /* */ 
 (function(process) {
   'use strict';
-  var assign = require("./Object.assign");
-  var keyOf = require("fbjs/lib/keyOf");
-  var invariant = require("fbjs/lib/invariant");
+  var assign = require('./Object.assign');
+  var keyOf = require('fbjs/lib/keyOf');
+  var invariant = require('fbjs/lib/invariant');
   var hasOwnProperty = ({}).hasOwnProperty;
   function shallowCopy(x) {
     if (Array.isArray(x)) {
@@ -75,4 +75,4 @@
     return nextValue;
   }
   module.exports = update;
-})(require("process"));
+})(require('process'));

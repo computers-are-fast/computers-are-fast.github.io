@@ -5,7 +5,7 @@ exports['default'] = createStore;
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {'default': obj};
 }
-var _utilsIsPlainObject = require("./utils/isPlainObject");
+var _utilsIsPlainObject = require('./utils/isPlainObject');
 var _utilsIsPlainObject2 = _interopRequireDefault(_utilsIsPlainObject);
 var ActionTypes = {INIT: '@@redux/INIT'};
 exports.ActionTypes = ActionTypes;

@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var SyntheticEvent = require("./SyntheticEvent");
+var SyntheticEvent = require('./SyntheticEvent');
 var ResponderEventInterface = {touchHistory: function(nativeEvent) {
     return null;
   }};

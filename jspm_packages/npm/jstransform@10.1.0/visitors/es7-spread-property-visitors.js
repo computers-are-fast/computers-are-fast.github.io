@@ -1,6 +1,6 @@
 /* */ 
-var Syntax = require("esprima-fb").Syntax;
-var utils = require("../src/utils");
+var Syntax = require('esprima-fb').Syntax;
+var utils = require('../src/utils');
 function visitObjectLiteralSpread(traverse, node, path, state) {
   utils.catchup(node.range[0], state);
   utils.append('Object.assign({', state);

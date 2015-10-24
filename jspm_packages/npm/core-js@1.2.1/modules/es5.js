@@ -1,26 +1,26 @@
 /* */ 
 'use strict';
-var $ = require("./$"),
-    SUPPORT_DESC = require("./$.support-desc"),
-    createDesc = require("./$.property-desc"),
-    html = require("./$.html"),
-    cel = require("./$.dom-create"),
-    has = require("./$.has"),
-    cof = require("./$.cof"),
-    $def = require("./$.def"),
-    invoke = require("./$.invoke"),
-    arrayMethod = require("./$.array-methods"),
-    IE_PROTO = require("./$.uid")('__proto__'),
-    isObject = require("./$.is-object"),
-    anObject = require("./$.an-object"),
-    aFunction = require("./$.a-function"),
-    toObject = require("./$.to-object"),
-    toIObject = require("./$.to-iobject"),
-    toInteger = require("./$.to-integer"),
-    toIndex = require("./$.to-index"),
-    toLength = require("./$.to-length"),
-    IObject = require("./$.iobject"),
-    fails = require("./$.fails"),
+var $ = require('./$'),
+    SUPPORT_DESC = require('./$.support-desc'),
+    createDesc = require('./$.property-desc'),
+    html = require('./$.html'),
+    cel = require('./$.dom-create'),
+    has = require('./$.has'),
+    cof = require('./$.cof'),
+    $def = require('./$.def'),
+    invoke = require('./$.invoke'),
+    arrayMethod = require('./$.array-methods'),
+    IE_PROTO = require('./$.uid')('__proto__'),
+    isObject = require('./$.is-object'),
+    anObject = require('./$.an-object'),
+    aFunction = require('./$.a-function'),
+    toObject = require('./$.to-object'),
+    toIObject = require('./$.to-iobject'),
+    toInteger = require('./$.to-integer'),
+    toIndex = require('./$.to-index'),
+    toLength = require('./$.to-length'),
+    IObject = require('./$.iobject'),
+    fails = require('./$.fails'),
     ObjectProto = Object.prototype,
     A = [],
     _slice = A.slice,
@@ -28,7 +28,7 @@ var $ = require("./$"),
     defineProperty = $.setDesc,
     getOwnDescriptor = $.getDesc,
     defineProperties = $.setDescs,
-    $indexOf = require("./$.array-includes")(false),
+    $indexOf = require('./$.array-includes')(false),
     factories = {},
     IE8_DOM_DEFINE;
 if (!SUPPORT_DESC) {
@@ -175,7 +175,7 @@ $def($def.P + $def.F * buggySlice, 'Array', {slice: function(begin, end) {
 $def($def.P + $def.F * (IObject != Object), 'Array', {join: function() {
     return _join.apply(IObject(this), arguments);
   }});
-$def($def.S, 'Array', {isArray: require("./$.is-array")});
+$def($def.S, 'Array', {isArray: require('./$.is-array')});
 var createArrayReduce = function(isRight) {
   return function(callbackfn, memo) {
     aFunction(callbackfn);

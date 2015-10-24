@@ -1,6 +1,6 @@
 /* */ 
-var isRegExp = require("./$.is-regexp"),
-    defined = require("./$.defined");
+var isRegExp = require('./$.is-regexp'),
+    defined = require('./$.defined');
 module.exports = function(that, searchString, NAME) {
   if (isRegExp(searchString))
     throw TypeError('String#' + NAME + " doesn't accept regex!");

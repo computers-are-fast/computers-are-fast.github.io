@@ -1,10 +1,10 @@
 /* */ 
 (function(process) {
   'use strict';
-  var EventConstants = require("./EventConstants");
-  var ReactErrorUtils = require("./ReactErrorUtils");
-  var invariant = require("fbjs/lib/invariant");
-  var warning = require("fbjs/lib/warning");
+  var EventConstants = require('./EventConstants');
+  var ReactErrorUtils = require('./ReactErrorUtils');
+  var invariant = require('fbjs/lib/invariant');
+  var warning = require('fbjs/lib/warning');
   var injection = {
     Mount: null,
     injectMount: function(InjectedMount) {
@@ -125,4 +125,4 @@
     injection: injection
   };
   module.exports = EventPluginUtils;
-})(require("process"));
+})(require('process'));

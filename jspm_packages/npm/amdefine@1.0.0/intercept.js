@@ -1,7 +1,7 @@
 /* */ 
 var inserted,
-    Module = require("module"),
-    fs = require("fs"),
+    Module = require('module'),
+    fs = require('fs'),
     existingExtFn = Module._extensions['.js'],
     amdefineRegExp = /amdefine\.js/;
 inserted = "if (typeof define !== 'function') {var define = require('amdefine')(module)}";

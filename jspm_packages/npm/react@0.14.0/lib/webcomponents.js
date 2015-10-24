@@ -6603,4 +6603,4 @@
   if (typeof exports !== 'undefined') {
     module.exports = window.WebComponents;
   }
-})(require("process"));
+})(require('process'));

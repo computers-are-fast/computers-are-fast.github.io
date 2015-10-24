@@ -1,8 +1,8 @@
 /* */ 
 'use strict';
-var toObject = require("./$.to-object"),
-    toIndex = require("./$.to-index"),
-    toLength = require("./$.to-length");
+var toObject = require('./$.to-object'),
+    toIndex = require('./$.to-index'),
+    toLength = require('./$.to-length');
 module.exports = [].copyWithin || function copyWithin(target, start) {
   var O = toObject(this),
       len = toLength(O.length),

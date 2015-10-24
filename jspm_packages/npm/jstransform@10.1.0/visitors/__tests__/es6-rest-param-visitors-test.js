@@ -1,5 +1,5 @@
 /* */ 
-require("mock-modules").autoMockOff();
+require('mock-modules').autoMockOff();
 describe('es6-rest-param-visitors', () => {
   var transformFn;
   var visitorSet;
@@ -7,11 +7,11 @@ describe('es6-rest-param-visitors', () => {
   var classVisitors;
   var restParamVisitors;
   beforeEach(() => {
-    require("mock-modules").dumpCache();
-    arrowFuncVisitors = require("../es6-arrow-function-visitors").visitorList;
-    classVisitors = require("../es6-class-visitors").visitorList;
-    restParamVisitors = require("../es6-rest-param-visitors").visitorList;
-    transformFn = require("../../src/jstransform").transform;
+    require('mock-modules').dumpCache();
+    arrowFuncVisitors = require('../es6-arrow-function-visitors').visitorList;
+    classVisitors = require('../es6-class-visitors').visitorList;
+    restParamVisitors = require('../es6-rest-param-visitors').visitorList;
+    transformFn = require('../../src/jstransform').transform;
     visitorSet = arrowFuncVisitors.concat(classVisitors).concat(restParamVisitors);
   });
   function transform(code) {

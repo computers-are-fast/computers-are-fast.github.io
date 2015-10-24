@@ -6,7 +6,7 @@
     var defineCache = {},
         loaderCache = {},
         alreadyCalled = false,
-        path = require("path"),
+        path = require('path'),
         makeRequire,
         stringRequire;
     function trimDots(ary) {
@@ -197,4 +197,4 @@
     return define;
   }
   module.exports = amdefine;
-})(require("process"));
+})(require('process'));

@@ -1,16 +1,16 @@
 /* */ 
-var $ = require("./$"),
-    global = require("./$.global"),
-    isRegExp = require("./$.is-regexp"),
-    $flags = require("./$.flags"),
+var $ = require('./$'),
+    global = require('./$.global'),
+    isRegExp = require('./$.is-regexp'),
+    $flags = require('./$.flags'),
     $RegExp = global.RegExp,
     Base = $RegExp,
     proto = $RegExp.prototype,
     re1 = /a/g,
     re2 = /a/g,
     CORRECT_NEW = new $RegExp(re1) !== re1;
-if (require("./$.support-desc") && (!CORRECT_NEW || require("./$.fails")(function() {
-  re2[require("./$.wks")('match')] = false;
+if (require('./$.support-desc') && (!CORRECT_NEW || require('./$.fails')(function() {
+  re2[require('./$.wks')('match')] = false;
   return $RegExp(re1) != re1 || $RegExp(re2) == re2 || $RegExp(re1, 'i') != '/a/i';
 }))) {
   $RegExp = function RegExp(p, f) {
@@ -31,6 +31,6 @@ if (require("./$.support-desc") && (!CORRECT_NEW || require("./$.fails")(functio
   });
   proto.constructor = $RegExp;
   $RegExp.prototype = proto;
-  require("./$.redef")(global, 'RegExp', $RegExp);
+  require('./$.redef')(global, 'RegExp', $RegExp);
 }
-require("./$.species")($RegExp);
+require('./$.species')($RegExp);

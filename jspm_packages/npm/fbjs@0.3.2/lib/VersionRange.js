@@ -38,7 +38,7 @@
       }
     };
   })();
-  var invariant = require("./invariant");
+  var invariant = require('./invariant');
   var componentRegex = /\./;
   var orRegex = /\|\|/;
   var rangeRegex = /\s+\-\s+/;
@@ -199,4 +199,4 @@
       return checkOrExpression(range.trim(), version.trim());
     }};
   module.exports = VersionRange;
-})(require("process"));
+})(require('process'));

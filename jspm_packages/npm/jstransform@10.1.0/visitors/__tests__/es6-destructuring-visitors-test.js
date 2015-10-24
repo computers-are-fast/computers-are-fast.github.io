@@ -1,5 +1,5 @@
 /* */ 
-require("mock-modules").autoMockOff();
+require('mock-modules').autoMockOff();
 describe('es6-destructuring-visitors', function() {
   var transformFn;
   var destructuringVisitors;
@@ -11,15 +11,15 @@ describe('es6-destructuring-visitors', function() {
   var arrowFunctionVisitors;
   var visitors;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    transformFn = require("../../src/jstransform").transform;
-    destructuringVisitors = require("../es6-destructuring-visitors").visitorList;
-    conciseMethodVisitors = require("../es6-object-concise-method-visitors").visitorList;
-    shortObjectsVisitors = require("../es6-object-short-notation-visitors").visitorList;
-    reservedWordsVisitors = require("../reserved-words-visitors").visitorList;
-    restParamVisitors = require("../es6-rest-param-visitors").visitorList;
-    classVisitorsVisitors = require("../es6-class-visitors").visitorList;
-    arrowFunctionVisitors = require("../es6-arrow-function-visitors").visitorList;
+    require('mock-modules').dumpCache();
+    transformFn = require('../../src/jstransform').transform;
+    destructuringVisitors = require('../es6-destructuring-visitors').visitorList;
+    conciseMethodVisitors = require('../es6-object-concise-method-visitors').visitorList;
+    shortObjectsVisitors = require('../es6-object-short-notation-visitors').visitorList;
+    reservedWordsVisitors = require('../reserved-words-visitors').visitorList;
+    restParamVisitors = require('../es6-rest-param-visitors').visitorList;
+    classVisitorsVisitors = require('../es6-class-visitors').visitorList;
+    arrowFunctionVisitors = require('../es6-arrow-function-visitors').visitorList;
     visitors = destructuringVisitors.concat(conciseMethodVisitors, shortObjectsVisitors, restParamVisitors, classVisitorsVisitors, arrowFunctionVisitors, reservedWordsVisitors);
   });
   function transform(code) {

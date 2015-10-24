@@ -130,7 +130,7 @@
   } else {
     (function(global) {
       'use strict';
-      var esprima = require("../esprima"),
+      var esprima = require('../esprima'),
           tick,
           total = 0,
           failures = [],
@@ -150,7 +150,7 @@
       }
       context = getContext(esprima, reportCase, reportFailure);
       tick = new Date();
-      require("./reflect").testReflect(context.Reflect, context.Pattern);
+      require('./reflect').testReflect(context.Reflect, context.Pattern);
       tick = (new Date()) - tick;
       header = total + ' tests. ' + failures.length + ' failures. ' + tick + ' ms';
       if (failures.length) {
@@ -164,4 +164,4 @@
       process.exit(failures.length === 0 ? 0 : 1);
     }(this));
   }
-})(require("process"));
+})(require('process'));

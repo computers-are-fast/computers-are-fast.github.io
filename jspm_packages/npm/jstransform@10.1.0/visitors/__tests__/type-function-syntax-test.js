@@ -1,12 +1,12 @@
 /* */ 
-require("mock-modules").autoMockOff();
+require('mock-modules').autoMockOff();
 describe('static type function syntax', function() {
   var flowSyntaxVisitors;
   var jstransform;
   beforeEach(function() {
-    require("mock-modules").dumpCache();
-    flowSyntaxVisitors = require("../type-syntax").visitorList;
-    jstransform = require("../../src/jstransform");
+    require('mock-modules').dumpCache();
+    flowSyntaxVisitors = require('../type-syntax').visitorList;
+    jstransform = require('../../src/jstransform');
   });
   function transform(code, visitors) {
     code = code.join('\n');
@@ -45,14 +45,14 @@ describe('static type function syntax', function() {
       expect(bar('p1', 42)).toEqual(['p1', 42]);
     });
     it('strips annotated params before a rest parameter', () => {
-      var restParamVisitors = require("../es6-rest-param-visitors").visitorList;
+      var restParamVisitors = require('../es6-rest-param-visitors').visitorList;
       var code = transform(['function foo(param1: number, ...args) {', '  return [param1, args];', '}', '', 'var bar = function(param1: number, ...args) {', '  return [param1, args];', '}'], restParamVisitors);
       eval(code);
       expect(foo(42, 43, 44)).toEqual([42, [43, 44]]);
       expect(bar(42, 43, 44)).toEqual([42, [43, 44]]);
     });
     it('strips annotated rest parameter', () => {
-      var restParamVisitors = require("../es6-rest-param-visitors").visitorList;
+      var restParamVisitors = require('../es6-rest-param-visitors').visitorList;
       var code = transform(['function foo(param1: number, ...args: Array<number>) {', '  return [param1, args];', '}', '', 'var bar = function(param1: number, ...args: Array<number>) {', '  return [param1, args];', '}'], restParamVisitors);
       eval(code);
       expect(foo(42, 43, 44)).toEqual([42, [43, 44]]);
@@ -89,7 +89,7 @@ describe('static type function syntax', function() {
       expect(counter).toBe(2);
     });
     it('strips void return types with rest params', () => {
-      var code = transform(['function foo(param1, ...rest): void {', '  param1();', '}', '', 'var bar = function(param1, ...rest): void {', '  param1();', '}'], require("../es6-rest-param-visitors").visitorList);
+      var code = transform(['function foo(param1, ...rest): void {', '  param1();', '}', '', 'var bar = function(param1, ...rest): void {', '  param1();', '}'], require('../es6-rest-param-visitors').visitorList);
       eval(code);
       var counter = 0;
       function testFn() {
@@ -115,7 +115,7 @@ describe('static type function syntax', function() {
       expect(bar(42)).toBe(42);
     });
     it('strips multi-parameter type annotations', () => {
-      var restParamVisitors = require("../es6-rest-param-visitors").visitorList;
+      var restParamVisitors = require('../es6-rest-param-visitors').visitorList;
       var code = transform(['function foo<T, S>(param1) {', '  return param1;', '}', '', 'var bar = function<T,S>(param1) {', '  return param1;', '}'], restParamVisitors);
       eval(code);
       expect(foo(42)).toBe(42);

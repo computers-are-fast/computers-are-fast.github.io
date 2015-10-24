@@ -1,6 +1,6 @@
 /* */ 
 'use strict';
-var getEventCharCode = require("./getEventCharCode");
+var getEventCharCode = require('./getEventCharCode');
 var normalizeKey = {
   'Esc': 'Escape',
   'Spacebar': ' ',

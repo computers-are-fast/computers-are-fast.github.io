@@ -1,11 +1,11 @@
 /* */ 
 (function(process) {
   'use strict';
-  var ExecutionEnvironment = require("fbjs/lib/ExecutionEnvironment");
-  var createNodesFromMarkup = require("fbjs/lib/createNodesFromMarkup");
-  var emptyFunction = require("fbjs/lib/emptyFunction");
-  var getMarkupWrap = require("fbjs/lib/getMarkupWrap");
-  var invariant = require("fbjs/lib/invariant");
+  var ExecutionEnvironment = require('fbjs/lib/ExecutionEnvironment');
+  var createNodesFromMarkup = require('fbjs/lib/createNodesFromMarkup');
+  var emptyFunction = require('fbjs/lib/emptyFunction');
+  var getMarkupWrap = require('fbjs/lib/getMarkupWrap');
+  var invariant = require('fbjs/lib/invariant');
   var OPEN_TAG_NAME_EXP = /^(<[^ \/>]+)/;
   var RESULT_INDEX_ATTR = 'data-danger-index';
   function getNodeName(markup) {
@@ -69,4 +69,4 @@
     }
   };
   module.exports = Danger;
-})(require("process"));
+})(require('process'));

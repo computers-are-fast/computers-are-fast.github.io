@@ -7,10 +7,10 @@
       keys.push(key);
     return keys;
   };
-  var util = require("core-util-is");
-  util.inherits = require("inherits");
-  var Readable = require("./_stream_readable");
-  var Writable = require("./_stream_writable");
+  var util = require('core-util-is');
+  util.inherits = require('inherits');
+  var Readable = require('./_stream_readable');
+  var Writable = require('./_stream_writable');
   util.inherits(Duplex, Readable);
   forEach(objectKeys(Writable.prototype), function(method) {
     if (!Duplex.prototype[method])
@@ -41,4 +41,4 @@
       f(xs[i], i);
     }
   }
-})(require("process"));
+})(require('process'));

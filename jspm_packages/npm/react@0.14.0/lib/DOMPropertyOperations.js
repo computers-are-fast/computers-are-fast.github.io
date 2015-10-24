@@ -1,10 +1,10 @@
 /* */ 
 (function(process) {
   'use strict';
-  var DOMProperty = require("./DOMProperty");
-  var ReactPerf = require("./ReactPerf");
-  var quoteAttributeValueForBrowser = require("./quoteAttributeValueForBrowser");
-  var warning = require("fbjs/lib/warning");
+  var DOMProperty = require('./DOMProperty');
+  var ReactPerf = require('./ReactPerf');
+  var quoteAttributeValueForBrowser = require('./quoteAttributeValueForBrowser');
+  var warning = require('fbjs/lib/warning');
   var VALID_ATTRIBUTE_NAME_REGEX = /^[a-zA-Z_][\w\.\-]*$/;
   var illegalAttributeNameCache = {};
   var validatedAttributeNameCache = {};
@@ -146,4 +146,4 @@
     deleteValueForProperty: 'deleteValueForProperty'
   });
   module.exports = DOMPropertyOperations;
-})(require("process"));
+})(require('process'));

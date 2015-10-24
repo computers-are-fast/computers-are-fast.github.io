@@ -1,7 +1,7 @@
 /* */ 
-var asap = require("asap");
+var asap = require('asap');
 if (typeof Promise === 'undefined') {
-  Promise = require("./lib/core");
-  require("./lib/es6-extensions");
+  Promise = require('./lib/core');
+  require('./lib/es6-extensions');
 }
-require("./polyfill-done");
+require('./polyfill-done');

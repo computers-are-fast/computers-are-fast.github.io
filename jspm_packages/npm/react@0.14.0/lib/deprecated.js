@@ -1,8 +1,8 @@
 /* */ 
 (function(process) {
   'use strict';
-  var assign = require("./Object.assign");
-  var warning = require("fbjs/lib/warning");
+  var assign = require('./Object.assign');
+  var warning = require('fbjs/lib/warning');
   function deprecated(fnName, newModule, newPackage, ctx, fn) {
     var warned = false;
     if (process.env.NODE_ENV !== 'production') {
@@ -16,4 +16,4 @@
     return fn;
   }
   module.exports = deprecated;
-})(require("process"));
+})(require('process'));

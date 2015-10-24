@@ -1,10 +1,10 @@
 /* */ 
 (function(process) {
   'use strict';
-  var UserAgentData = require("./UserAgentData");
-  var VersionRange = require("./VersionRange");
-  var mapObject = require("./mapObject");
-  var memoizeStringOnly = require("./memoizeStringOnly");
+  var UserAgentData = require('./UserAgentData');
+  var VersionRange = require('./VersionRange');
+  var mapObject = require('./mapObject');
+  var memoizeStringOnly = require('./memoizeStringOnly');
   function compare(name, version, query, normalizer) {
     if (name === query) {
       return true;
@@ -46,4 +46,4 @@
     }
   };
   module.exports = mapObject(UserAgent, memoizeStringOnly);
-})(require("process"));
+})(require('process'));
