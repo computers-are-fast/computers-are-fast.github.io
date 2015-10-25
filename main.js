@@ -67,13 +67,13 @@ class ScoreCard extends React.Component {
 
 class QuizQuestion extends React.Component {
     render() {
-        let { code, name, selectedAnswer, rounded_iters:answer, exact_iters:exactAnswer, onChange } = this.props;
+        let { code, name, units, selectedAnswer, rounded_iters:answer, exact_iters:exactAnswer, onChange } = this.props;
         var answered = selectedAnswer !== undefined
         var correct = is_close(selectedAnswer, exactAnswer)
         var gradeGlyph = correct ? "✓" : "✗"
         return <div className="fl w-100 w-50-l mhm mhl-m mhn-l phm-l">
             <div className="pos-rel h2">
-                <h3 className="pos-abs left-0">{name}</h3>
+                <h3 className="pos-abs left-0">{name} </h3>
                 <h3 className="pos-abs right-0 mrl">{answered ? gradeGlyph: ""}</h3>
             </div>
             <AnswerSelector name={name} selectedAnswer={selectedAnswer} exactAnswer={exactAnswer} onChange={onChange} />
@@ -82,6 +82,7 @@ class QuizQuestion extends React.Component {
                     <p> <b> Exact answer: </b>{english(exactAnswer)} </p>
             : undefined }
             </div>
+            Guess: {units} in one second
             <pre className="f5 ofx-scr bg-near-white pas b--light-silver ba br2">{code}</pre>
         </div>;
     }
@@ -193,11 +194,12 @@ class Section extends React.Component {
 }
 
 function getInitialState(curriculum) {
-    let initialState = new Map()
-    let allPrograms = [].concat.apply([],curriculum.map(({text, programs}, index) => programs))
-    allPrograms.forEach(program => {
-        initialState.set(program, undefined)
-    })
+    var initialState = new Map()
+    var allPrograms = {}
+    curriculum.map(({text, programs}, index) => Object.assign(allPrograms, programs)) 
+    for (var key in allPrograms) {
+      initialState.set(key, undefined);
+    }
     return initialState
 }
 
@@ -212,20 +214,25 @@ class Quiz extends React.Component {
             { curriculum.map(({text, programs, conclusion}, index) => {
 
                 var finished = true
-                programs.forEach(program => {
-                    if (selectedAnswers.get(program) === undefined) {
+                var programStates = []
+                for (var progName in programs) {
+                    console.log(progName)
+                    if (selectedAnswers.get(progName) === undefined) {
                         finished = false
                     }
-                })
+                    programStates.push(Object.assign({
+                        name: progName,
+                        units: programs[progName],
+                        selectedAnswer: selectedAnswers.get(progName),
+                    }, benchmarks[progName]))
+                }
                 return <Section
                     key={index}
                     onAnswerChange={(prog, answer) => dispatch(selectAnswer(prog, answer))}
                     text={text}
                     finished={finished}
                     conclusion={conclusion}
-                    programs={
-                        programs.map(prog => Object.assign({name: prog, selectedAnswer: selectedAnswers.get(prog)}, benchmarks[prog]))
-                    } />
+                    programs={programStates} />
                 })
             }
             <div className="h3"> </div>
